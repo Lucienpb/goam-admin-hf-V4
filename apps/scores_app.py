@@ -13,7 +13,7 @@ from datetime import datetime
 import streamlit as st
 import pandas as pd
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 from PIL import ImageOps
 from openpyxl import load_workbook
 
@@ -223,31 +223,83 @@ def _extract_ocr_lines(uploaded_image: Image.Image):
     lines = []
     debug_text = []
 
+    def _collect_lines(result_obj):
+        out = []
+        if isinstance(result_obj, list):
+            for item in result_obj:
+                if not isinstance(item, (list, tuple)) or len(item) < 2:
+                    continue
+                text = str(item[1]).strip()
+                if text:
+                    out.append(text)
+        return out
+
+    def _quality_score(candidate_lines):
+        if not candidate_lines:
+            return 0
+        score = len(candidate_lines)
+        for t in candidate_lines:
+            lower = t.lower()
+            if re.search(r"\d\s*[/|\\]\s*\d", t):
+                score += 4
+            if re.search(r"\d+", t):
+                score += 1
+            if any(k in lower for k in ("player", "marker", "total", "out", "in", "alliance")):
+                score += 3
+        return score
+
     # Preferred OCR backend: RapidOCR (fully local, no external tesseract binary required).
     if RapidOCR is not None:
         engine = RapidOCR()
+        gray = uploaded_image.convert("L")
+        rgb = uploaded_image.convert("RGB")
+        bw = ImageOps.autocontrast(gray).point(lambda x: 255 if x > 145 else 0, mode="1").convert("RGB")
+        bw_inv = ImageOps.invert(bw.convert("L")).convert("RGB")
+        sharp = ImageOps.autocontrast(gray).filter(ImageFilter.SHARPEN).convert("RGB")
 
         candidates = [
-            uploaded_image.convert("RGB"),
-            ImageOps.autocontrast(uploaded_image.convert("L")).convert("RGB"),
+            rgb,
+            ImageOps.autocontrast(gray).convert("RGB"),
+            ImageOps.equalize(gray).convert("RGB"),
+            sharp,
+            bw,
+            bw_inv,
+            rgb.rotate(-1.2, expand=True, fillcolor="white"),
+            rgb.rotate(1.2, expand=True, fillcolor="white"),
         ]
 
+        best_score = -1
+        all_lines = []
         for idx, candidate in enumerate(candidates, start=1):
             arr = np.array(candidate)
-            result, _ = engine(arr)
-            candidate_lines = []
-
-            if isinstance(result, list):
-                for item in result:
-                    if not isinstance(item, (list, tuple)) or len(item) < 2:
-                        continue
-                    text = str(item[1]).strip()
-                    if text:
-                        candidate_lines.append(text)
+            try:
+                result, _ = engine(arr)
+                candidate_lines = _collect_lines(result)
+            except Exception as e:
+                debug_text.append(f"Pass {idx}: OCR error ({e})")
+                continue
 
             debug_text.append(f"Pass {idx}: {len(candidate_lines)} OCR lines")
-            if len(candidate_lines) > len(lines):
+            all_lines.extend(candidate_lines)
+
+            score = _quality_score(candidate_lines)
+            if score > best_score:
+                best_score = score
                 lines = candidate_lines
+
+        if all_lines:
+            merged = []
+            seen = set()
+            for t in all_lines:
+                k = re.sub(r"\s+", " ", str(t).strip().lower())
+                if not k or k in seen:
+                    continue
+                seen.add(k)
+                merged.append(str(t).strip())
+
+            merged_score = _quality_score(merged)
+            if merged_score >= max(best_score, 0):
+                lines = merged
 
     return lines, "\n".join(debug_text)
 
@@ -306,52 +358,100 @@ def _parse_ocr_scorecard_lines(lines):
 
 def _clean_ocr_name(text):
     value = re.sub(r"\s+", " ", str(text or "")).strip()
-    value = re.sub(r"\b(sap\s*id|name|marker\s*[a-d])\b", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(sap\s*id|name|marker\s*[a-d]|player\s*[a-d])\b", "", value, flags=re.IGNORECASE)
     value = re.sub(r"[^A-Za-z '\-]", "", value).strip(" -|:;,.\t")
     if len(value) < 3:
         return ""
     return " ".join(token.capitalize() for token in value.split())
 
 
-def _parse_scorecard_layout_a_to_d(lines):
+def _extract_slot_names(lines):
     slots = {"A": "", "B": "", "C": "", "D": ""}
-
-    # Extract player names from "Player A/B/C/D" style lines.
-    player_patterns = [
-        r"\bplayer\s*([abcd])\b[:\-\s]*(.+)$",
-        r"\bplay\s*([abcd])\b[:\-\s]*(.+)$",
+    patterns = [
+        re.compile(r"\bplayer\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
+        re.compile(r"\bmarker\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
+        re.compile(r"\bplay\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
     ]
 
     for raw in lines:
         line = re.sub(r"\s+", " ", str(raw or "")).strip()
-        lower = line.lower()
-        for pat in player_patterns:
-            m = re.search(pat, lower, flags=re.IGNORECASE)
+        if not line:
+            continue
+        for pat in patterns:
+            m = pat.search(line)
             if not m:
                 continue
             slot = m.group(1).upper()
-
-            # Use original line tail (preserves letter case for names).
-            split_idx = line.lower().find(m.group(1).lower())
-            tail = line[split_idx + 1 :] if split_idx >= 0 else line
-            tail = re.sub(r"^[\s:\-]+", "", tail)
+            tail = m.group(2)
             name = _clean_ocr_name(tail)
             if name and not slots[slot]:
                 slots[slot] = name
 
+    return slots
+
+
+def _extract_score_ips_pairs(text):
+    pairs = []
+    line = str(text or "")
+
+    for m in re.finditer(r"(\d{1,3})\s*[/|\\]\s*(\d{1,2})", line):
+        strokes = _to_int_or_none(m.group(1))
+        ips = _to_int_or_none(m.group(2))
+        if strokes is None or ips is None:
+            continue
+        if 40 <= strokes <= 160 and 0 <= ips <= 60:
+            pairs.append((strokes, ips))
+
+    if len(pairs) >= 4:
+        return pairs[:4]
+
+    nums = [_to_int_or_none(x) for x in re.findall(r"\d+", line)]
+    nums = [n for n in nums if n is not None]
+    if len(nums) >= 8:
+        candidate = []
+        for i in range(0, min(8, len(nums)), 2):
+            strokes = nums[i]
+            ips = nums[i + 1]
+            if 40 <= strokes <= 160 and 0 <= ips <= 60:
+                candidate.append((strokes, ips))
+        if len(candidate) >= 4:
+            return candidate[:4]
+
+    return pairs
+
+
+def _parse_scorecard_layout_a_to_d(lines):
+    slots = _extract_slot_names(lines)
+    ordered_slots = ["A", "B", "C", "D"]
+
     # Parse the total row where score/result pairs are typically written.
     total_line = ""
     total_numbers = []
+    best_pair_line = ""
+    best_pairs = []
     for raw in lines:
         line = re.sub(r"\s+", " ", str(raw or "")).strip()
-        if "total" not in line.lower():
+        if not line:
             continue
-        nums = [int(x) for x in re.findall(r"\d+", line)]
-        if len(nums) > len(total_numbers):
-            total_numbers = nums
-            total_line = line
 
-    if not any(slots.values()) or len(total_numbers) < 4:
+        pairs = _extract_score_ips_pairs(line)
+        lower = line.lower()
+        weight = 2 if any(k in lower for k in ("total", "out", "in", "alliance")) else 0
+        if len(pairs) + weight > len(best_pairs):
+            best_pairs = pairs
+            best_pair_line = line
+
+        if "total" in lower or "out" in lower or "in" in lower:
+            nums = [int(x) for x in re.findall(r"\d+", line)]
+            if len(nums) > len(total_numbers):
+                total_numbers = nums
+                total_line = line
+
+    if not any(slots.values()):
+        for slot in ordered_slots:
+            slots[slot] = f"Player {slot}"
+
+    if len(best_pairs) < 4 and len(total_numbers) < 4:
         return pd.DataFrame()
 
     values = total_numbers[:]
@@ -359,8 +459,22 @@ def _parse_scorecard_layout_a_to_d(lines):
         values = values[1:]
 
     rows = []
-    ordered_slots = ["A", "B", "C", "D"]
-    if len(values) >= 8:
+    if len(best_pairs) >= 4:
+        for i, slot in enumerate(ordered_slots):
+            name = slots.get(slot, "")
+            if not name:
+                continue
+            strokes, ips = best_pairs[i]
+            rows.append(
+                {
+                    "Name": name,
+                    "Strokes": strokes,
+                    "IPS": ips,
+                    "LIV": "",
+                    "OCR Line": best_pair_line,
+                }
+            )
+    elif len(values) >= 8:
         # Assume score/result pairs for each player.
         for i, slot in enumerate(ordered_slots):
             name = slots.get(slot, "")
