@@ -10,18 +10,18 @@ import streamlit as st
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_REPO = os.getenv("GITHUB_REPO")  # e.g. "Lucienpb/goam-admin-hf-v2"
 GITHUB_BRANCH = "main"
+USE_GITHUB = bool(GITHUB_TOKEN and GITHUB_REPO)
 
-if not GITHUB_TOKEN:
-    raise RuntimeError("GITHUB_TOKEN is missing in Hugging Face Secrets")
 
-if not GITHUB_REPO:
-    raise RuntimeError("GITHUB_REPO is missing in Hugging Face Secrets")
 
 
 # ------------------------------------------------------------
 # Internal helper: GitHub API request
 # ------------------------------------------------------------
 def _github_request(method, url, **kwargs):
+    if not USE_GITHUB:
+        raise RuntimeError("GitHub sync not configured. Set GITHUB_TOKEN and GITHUB_REPO.")
+
     headers = kwargs.pop("headers", {})
     headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
     headers["Accept"] = "application/vnd.github+json"
@@ -48,6 +48,15 @@ def github_load_json(path):
     If file does not exist (404), returns (None, None).
     Any other error is raised.
     """
+    if not USE_GITHUB:
+        if not os.path.exists(path):
+            return None, None
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f), None
+        except Exception:
+            return {}, None
+
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}?ref={GITHUB_BRANCH}"
 
     try:
@@ -83,6 +92,12 @@ def github_save_json(path, obj, sha=None, message=None):
     If sha is provided → update.
     If sha is None → create.
     """
+    if not USE_GITHUB:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(obj, f, indent=2)
+        return True
+
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}"
 
     content_str = json.dumps(obj, indent=2)
@@ -149,7 +164,7 @@ def save_json_with_sha(path, new_data):
 # Save a single user's updated record
 # ------------------------------------------------------------
 def save_user_record(username, updated_record):
-    path = "data/user.json"   # FIXED: save to user.json
+    path = "data/users.json"
 
     users, sha = github_load_json(path)
 
@@ -174,8 +189,11 @@ def save_user_record(username, updated_record):
 # Sync ALL app data from GitHub into local files
 # ------------------------------------------------------------
 def sync_all_from_github():
+    if not USE_GITHUB:
+        return
+
     files = [
-        "data/user.json",
+        "data/users.json",
         "data/ai_config.json",
         "data/course_data.json",
         "data/goam_scores.json",

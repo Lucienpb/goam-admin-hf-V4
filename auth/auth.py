@@ -20,7 +20,7 @@ import bcrypt
 # CONFIGURATION
 # ========================================================================
 BASE_DIR = Path(__file__).parent.parent
-USERS_FILE = BASE_DIR / "data" / "user.json"
+USERS_FILE = BASE_DIR / "data" / "users.json"
 PLAYERS_FILE = BASE_DIR / "data" / "players.json"
 AUDIT_LOG_FILE = BASE_DIR / "logs" / "auth_audit.log"
 TOKEN_STORE_FILE = BASE_DIR / "data" / "tokens.json"
@@ -63,12 +63,12 @@ def validate_email(email: str) -> bool:
 def get_player_name_from_email(email: str) -> Optional[str]:
     """
     Map email to player name from players.json by matching user info.
-    Falls back to user.json name field if available.
+    Falls back to users.json name field if available.
     Returns None if no player found.
     """
     email_norm = normalize_email(email)
     
-    # First, check if user.json has a name field
+    # First, check if users.json has a name field
     users = load_users_raw()
     if email_norm in users and users[email_norm].get("name"):
         return users[email_norm]["name"]
