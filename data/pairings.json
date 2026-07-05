@@ -1,0 +1,187 @@
+{
+  "Unnamed": {
+    "course": "Unknown Course",
+    "fourballs": [
+      {
+        "fourball": 1,
+        "players": [
+          "Mika",
+          "Lenny",
+          "Byron"
+        ]
+      },
+      {
+        "fourball": 2,
+        "players": [
+          "John B",
+          "Trevor",
+          "Fuad",
+          "Ranzel"
+        ]
+      },
+      {
+        "fourball": 3,
+        "players": [
+          "Ashley",
+          "Lucien",
+          "Warren",
+          "Eugene"
+        ]
+      },
+      {
+        "fourball": 4,
+        "players": [
+          "Pieter",
+          "Dale",
+          "Jodi",
+          "Godfrey"
+        ]
+      },
+      {
+        "fourball": 5,
+        "players": [
+          "Shaheen",
+          "Arno",
+          "Ronny",
+          "Winna"
+        ]
+      },
+      {
+        "fourball": 6,
+        "players": [
+          "Judge",
+          "Dewald",
+          "Laurent",
+          "Arn"
+        ]
+      },
+      {
+        "fourball": 1,
+        "players": [
+          "Mika",
+          "Lenny"
+        ]
+      },
+      {
+        "fourball": 2,
+        "players": [
+          "Eugene",
+          "Kirsten",
+          "Shawn",
+          "Laurent"
+        ]
+      },
+      {
+        "fourball": 3,
+        "players": [
+          "Godfrey",
+          "Lucien",
+          "Dale",
+          "Byron"
+        ]
+      },
+      {
+        "fourball": 4,
+        "players": [
+          "Warren",
+          "Chad",
+          "Arno",
+          "Bjorn"
+        ]
+      },
+      {
+        "fourball": 5,
+        "players": [
+          "Winna",
+          "Trevor",
+          "JP",
+          "Ranzel"
+        ]
+      },
+      {
+        "fourball": 6,
+        "players": [
+          "Jodi",
+          "Ashley",
+          "Pieter"
+        ]
+      },
+      {
+        "fourball": 1,
+        "players": [
+          "Lucien",
+          "Warren",
+          "Dewald"
+        ]
+      },
+      {
+        "fourball": 2,
+        "players": [
+          "Byron",
+          "Bjorn",
+          "Ashley"
+        ]
+      },
+      {
+        "fourball": 3,
+        "players": [
+          "Jodi",
+          "Ranzel",
+          "Oils",
+          "Shaheen"
+        ]
+      },
+      {
+        "fourball": 4,
+        "players": [
+          "Arno",
+          "Chad",
+          "Mika",
+          "Jessi"
+        ]
+      },
+      {
+        "fourball": 1,
+        "players": [
+          "Shaheen",
+          "Arno",
+          "Pieter"
+        ]
+      },
+      {
+        "fourball": 2,
+        "players": [
+          "Lucien",
+          "Uncle John",
+          "Shawn",
+          "Ronny"
+        ]
+      },
+      {
+        "fourball": 3,
+        "players": [
+          "Jodi",
+          "Trevor",
+          "Eugene",
+          "Ranzel"
+        ]
+      },
+      {
+        "fourball": 4,
+        "players": [
+          "Laurent",
+          "Mika",
+          "Dale"
+        ]
+      },
+      {
+        "fourball": 5,
+        "players": [
+          "Winston",
+          "Oils",
+          "Jessie"
+        ]
+      }
+    ]
+  }
+}

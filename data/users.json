@@ -1,0 +1,21 @@
+{
+  "lucienpb@gmail.com": {
+    "password_hash": "$2b$12$RQlgxZY3Ri1IhFsraRqCjuIgzchP25rCjk/vuygvOPIy7JHueo/ka",
+    "role": "admin",
+    "verified": true,
+    "created_at": "2026-05-16T18:44:00",
+    "updated": "2026-05-17 08:07:47",
+    "password": "$2b$12$UoQDPAaZOfTMJ.9BM3ZynOjujWRuSiwjksmmBydXxr6rWVSzOjI.y",
+    "name": "Lucien Barnes",
+    "phone": "0814952836",
+    "updated_at": "2026-05-20 19:28:46"
+  },
+  "lucien.barnes@goam.co.za": {
+    "password_hash": "$2b$12$de./y/QUu/E1W/G02z6Quub2zI1akM2xAzmMSj9JDyWMAq15ljkUy",
+    "role": "member",
+    "verified": true,
+    "created_at": "2026-05-17T08:04:30.288754",
+    "updated": "2026-05-17 08:05:45",
+    "updated_at": "2026-05-18T19:02:12.862044"
+  }
+}

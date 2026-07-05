@@ -1,0 +1,1503 @@
+{
+  "Feb'26": {
+    "course": "Akasia",
+    "players": [
+      {
+        "name": "Trevor Meyer",
+        "strokes": 90,
+        "ips": 40,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Arno Adonis",
+        "strokes": 88,
+        "ips": 36,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Winston Willemse",
+        "strokes": 91,
+        "ips": 36,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "John Barker",
+        "strokes": 86,
+        "ips": 36,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Ashley Spocter",
+        "strokes": 93,
+        "ips": 35,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Lucien Barnes",
+        "strokes": 96,
+        "ips": 35,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Jodi Van Niekerk",
+        "strokes": 89,
+        "ips": 35,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Fuad Adams",
+        "strokes": 93,
+        "ips": 34,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Warren Lottering",
+        "strokes": 97,
+        "ips": 33,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Mika Moerat",
+        "strokes": 87,
+        "ips": 33,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Dale Adonis",
+        "strokes": 92,
+        "ips": 32,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Godfrey Daniels",
+        "strokes": 99,
+        "ips": 31,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Eugene Dudley",
+        "strokes": 102,
+        "ips": 30,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Byron Labuschagne",
+        "strokes": 92,
+        "ips": 29,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Shaheen Boughan",
+        "strokes": 96,
+        "ips": 28,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Arn Smith",
+        "strokes": 103,
+        "ips": 28,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Ranzel Louw",
+        "strokes": 98,
+        "ips": 25,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Brian Plaatjies",
+        "strokes": 105,
+        "ips": 24,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Dewald Van Rooyen",
+        "strokes": 98,
+        "ips": 24,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Laurent Changuion",
+        "strokes": 99,
+        "ips": 19,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Lenny Booysen",
+        "strokes": 112,
+        "ips": 15,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Pieter Gagiano",
+        "strokes": 112,
+        "ips": 14,
+        "team": "Tee Tigers",
+        "nett": null
+      }
+    ],
+    "best_gross": "John Barker",
+    "best_nett": null,
+    "ox_nau": "Pieter Gagiano",
+    "placements": [
+      {
+        "position": 1,
+        "name": "Trevor Meyer",
+        "ips": 40
+      },
+      {
+        "position": 2,
+        "name": "Arno Adonis",
+        "ips": 36
+      },
+      {
+        "position": 3,
+        "name": "Winston Willemse",
+        "ips": 36
+      },
+      {
+        "position": 4,
+        "name": "John Barker",
+        "ips": 36
+      },
+      {
+        "position": 5,
+        "name": "Ashley Spocter",
+        "ips": 35
+      },
+      {
+        "position": 6,
+        "name": "Lucien Barnes",
+        "ips": 35
+      },
+      {
+        "position": 7,
+        "name": "Jodi Van Niekerk",
+        "ips": 35
+      },
+      {
+        "position": 8,
+        "name": "Fuad Adams",
+        "ips": 34
+      },
+      {
+        "position": 9,
+        "name": "Warren Lottering",
+        "ips": 33
+      },
+      {
+        "position": 10,
+        "name": "Mika Moerat",
+        "ips": 33
+      },
+      {
+        "position": 11,
+        "name": "Dale Adonis",
+        "ips": 32
+      },
+      {
+        "position": 12,
+        "name": "Godfrey Daniels",
+        "ips": 31
+      },
+      {
+        "position": 13,
+        "name": "Eugene Dudley",
+        "ips": 30
+      },
+      {
+        "position": 14,
+        "name": "Byron Labuschagne",
+        "ips": 29
+      },
+      {
+        "position": 15,
+        "name": "Shaheen Boughan",
+        "ips": 28
+      },
+      {
+        "position": 16,
+        "name": "Arn Smith",
+        "ips": 28
+      },
+      {
+        "position": 17,
+        "name": "Ranzel Louw",
+        "ips": 25
+      },
+      {
+        "position": 18,
+        "name": "Brian Plaatjies",
+        "ips": 24
+      },
+      {
+        "position": 19,
+        "name": "Dewald Van Rooyen",
+        "ips": 24
+      },
+      {
+        "position": 20,
+        "name": "Laurent Changuion",
+        "ips": 19
+      },
+      {
+        "position": 21,
+        "name": "Lenny Booysen",
+        "ips": 15
+      },
+      {
+        "position": 22,
+        "name": "Pieter Gagiano",
+        "ips": 14
+      }
+    ],
+    "liv_totals": {
+      "Fairway Fighters": 108,
+      "Home Boys": 102,
+      "Tee Stingers": 104,
+      "Tee Tigers": 102,
+      "Birdie Buddies": 57
+    },
+    "pool_winner": null,
+    "fines_total": 0
+  },
+  "Mar'26": {
+    "course": "PGC",
+    "players": [
+      {
+        "name": "Chad Naude",
+        "strokes": 87,
+        "ips": 35,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Bjorn Singh",
+        "strokes": 90,
+        "ips": 35,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Mika Moerat",
+        "strokes": 81,
+        "ips": 35,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Arno Adonis",
+        "strokes": 87,
+        "ips": 32,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Lucien Barnes",
+        "strokes": 96,
+        "ips": 32,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Jodi Van Niekerk",
+        "strokes": 91,
+        "ips": 31,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Shawn Davies",
+        "strokes": 82,
+        "ips": 31,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Lenny Booysen",
+        "strokes": 106,
+        "ips": 30,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Trevor Meyer",
+        "strokes": 95,
+        "ips": 30,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Laurent Changuion",
+        "strokes": 93,
+        "ips": 29,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Byron Labuschagne",
+        "strokes": 94,
+        "ips": 28,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Dale Adonis",
+        "strokes": 95,
+        "ips": 27,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Eugene Dudley",
+        "strokes": 100,
+        "ips": 27,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Warren Lottering",
+        "strokes": 101,
+        "ips": 26,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Ashley Spocter",
+        "strokes": 102,
+        "ips": 23,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Ranzel Louw",
+        "strokes": 100,
+        "ips": 22,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Pieter Gagiano",
+        "strokes": 115,
+        "ips": 22,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Godfrey Daniels",
+        "strokes": 108,
+        "ips": 20,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Kirsten Jacobs",
+        "strokes": 103,
+        "ips": 23,
+        "team": "Tee Tigers",
+        "nett": null
+      }
+    ],
+    "best_gross": "Mika Moerat",
+    "best_nett": null,
+    "ox_nau": "Godfrey Daniels",
+    "placements": [
+      {
+        "position": 1,
+        "name": "Chad Naude",
+        "ips": 35
+      },
+      {
+        "position": 2,
+        "name": "Bjorn Singh",
+        "ips": 35
+      },
+      {
+        "position": 3,
+        "name": "Mika Moerat",
+        "ips": 35
+      },
+      {
+        "position": 4,
+        "name": "Arno Adonis",
+        "ips": 32
+      },
+      {
+        "position": 5,
+        "name": "Lucien Barnes",
+        "ips": 32
+      },
+      {
+        "position": 6,
+        "name": "Jodi Van Niekerk",
+        "ips": 31
+      },
+      {
+        "position": 7,
+        "name": "Shawn Davies",
+        "ips": 31
+      },
+      {
+        "position": 8,
+        "name": "Lenny Booysen",
+        "ips": 30
+      },
+      {
+        "position": 9,
+        "name": "Trevor Meyer",
+        "ips": 30
+      },
+      {
+        "position": 10,
+        "name": "Laurent Changuion",
+        "ips": 29
+      },
+      {
+        "position": 11,
+        "name": "Byron Labuschagne",
+        "ips": 28
+      },
+      {
+        "position": 12,
+        "name": "Dale Adonis",
+        "ips": 27
+      },
+      {
+        "position": 13,
+        "name": "Eugene Dudley",
+        "ips": 27
+      },
+      {
+        "position": 14,
+        "name": "Warren Lottering",
+        "ips": 26
+      },
+      {
+        "position": 15,
+        "name": "Ashley Spocter",
+        "ips": 23
+      },
+      {
+        "position": 16,
+        "name": "Kirsten Jacobs",
+        "ips": 23
+      },
+      {
+        "position": 17,
+        "name": "Ranzel Louw",
+        "ips": 22
+      },
+      {
+        "position": 18,
+        "name": "Pieter Gagiano",
+        "ips": 22
+      },
+      {
+        "position": 19,
+        "name": "Godfrey Daniels",
+        "ips": 20
+      }
+    ],
+    "liv_totals": {
+      "Fairway Fighters": 102,
+      "Birdie Buddies": 94,
+      "Home Boys": 86,
+      "Tee Stingers": 86,
+      "Tee Tigers": 76
+    },
+    "pool_winner": null,
+    "fines_total": 0
+  },
+  "Apr'26": {
+    "course": "Kyalami",
+    "players": [
+      {
+        "name": "Chad Naude",
+        "strokes": 90,
+        "ips": 37,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Arno Adonis",
+        "strokes": 83,
+        "ips": 37,
+        "team": "Home Boys",
+        "nett": null
+      },
+      {
+        "name": "Warren Lottering",
+        "strokes": 93,
+        "ips": 36,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Lucien Barnes",
+        "strokes": 95,
+        "ips": 35,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Bjorn Singh",
+        "strokes": 93,
+        "ips": 34,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Dewald Van Rooyen",
+        "strokes": 94,
+        "ips": 31,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Mika Moerat",
+        "strokes": 90,
+        "ips": 29,
+        "team": "Fairway Fighters",
+        "nett": null
+      },
+      {
+        "name": "Ranzel Louw",
+        "strokes": 93,
+        "ips": 29,
+        "team": "Tee Tigers",
+        "nett": null
+      },
+      {
+        "name": "Shaheen Boughan",
+        "strokes": 95,
+        "ips": 28,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Jodi Van Niekerk",
+        "strokes": 99,
+        "ips": 27,
+        "team": "Tee Stingers",
+        "nett": null
+      },
+      {
+        "name": "Byron Labuschagne",
+        "strokes": 94,
+        "ips": 25,
+        "team": "Birdie Buddies",
+        "nett": null
+      },
+      {
+        "name": "Ashley Spocter",
+        "strokes": 104,
+        "ips": 24,
+        "team": "Tee Tigers",
+        "nett": null
+      }
+    ],
+    "best_gross": "Arno Adonis",
+    "best_nett": null,
+    "ox_nau": "Ashley Spocter",
+    "placements": [
+      {
+        "position": 1,
+        "name": "Chad Naude",
+        "ips": 37
+      },
+      {
+        "position": 2,
+        "name": "Arno Adonis",
+        "ips": 37
+      },
+      {
+        "position": 3,
+        "name": "Warren Lottering",
+        "ips": 36
+      },
+      {
+        "position": 4,
+        "name": "Lucien Barnes",
+        "ips": 35
+      },
+      {
+        "position": 5,
+        "name": "Bjorn Singh",
+        "ips": 34
+      },
+      {
+        "position": 6,
+        "name": "Dewald Van Rooyen",
+        "ips": 31
+      },
+      {
+        "position": 7,
+        "name": "Mika Moerat",
+        "ips": 29
+      },
+      {
+        "position": 8,
+        "name": "Ranzel Louw",
+        "ips": 29
+      },
+      {
+        "position": 9,
+        "name": "Shaheen Boughan",
+        "ips": 28
+      },
+      {
+        "position": 10,
+        "name": "Jodi Van Niekerk",
+        "ips": 27
+      },
+      {
+        "position": 11,
+        "name": "Byron Labuschagne",
+        "ips": 25
+      },
+      {
+        "position": 12,
+        "name": "Ashley Spocter",
+        "ips": 24
+      }
+    ],
+    "liv_totals": {
+      "Fairway Fighters": 103,
+      "Home Boys": 37,
+      "Tee Stingers": 63,
+      "Birdie Buddies": 87,
+      "Tee Tigers": 53
+    },
+    "pool_winner": null,
+    "fines_total": 0
+  },
+  "May'26": {
+    "course": "CopperLeaf",
+    "players": [
+      {
+        "name": "John Barker",
+        "strokes": 80,
+        "ips": 38,
+        "team": "Tee Tigers",
+        "handicap": 11,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": 11.0,
+        "bg": NaN,
+        "bn": 69,
+        "pool_bet": "X",
+        "pool_payouts": 250.0,
+        "fines": 20,
+        "nett": 69
+      },
+      {
+        "name": "Arno Adonis",
+        "strokes": 85,
+        "ips": 34,
+        "team": "Home Boys",
+        "handicap": 10,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 75,
+        "pool_bet": "X",
+        "pool_payouts": 150.0,
+        "fines": 20,
+        "nett": 75
+      },
+      {
+        "name": "Ronny Kaptein",
+        "strokes": 88,
+        "ips": 34,
+        "team": "Tee Tigers",
+        "handicap": 14,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": 6.0,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 74,
+        "pool_bet": "X",
+        "pool_payouts": 20.0,
+        "fines": 20,
+        "nett": 74
+      },
+      {
+        "name": "Shawn Davies",
+        "strokes": 79,
+        "ips": 32,
+        "team": "Birdie Buddies",
+        "handicap": 4,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 75,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 75
+      },
+      {
+        "name": "Winston Willemse",
+        "strokes": 94,
+        "ips": 32,
+        "team": "Tee Stingers",
+        "handicap": 18,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 76,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 76
+      },
+      {
+        "name": "Lucien Barnes",
+        "strokes": 99,
+        "ips": 30,
+        "team": "Fairway Fighters",
+        "handicap": 21,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 78,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 78
+      },
+      {
+        "name": "Pieter Gagiano",
+        "strokes": 112,
+        "ips": 30,
+        "team": "Tee Tigers",
+        "handicap": 32,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 80,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 80
+      },
+      {
+        "name": "Mika Moerat",
+        "strokes": 87,
+        "ips": 28,
+        "team": "Fairway Fighters",
+        "handicap": 7,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 80,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 80
+      },
+      {
+        "name": "Dale Adonis",
+        "strokes": 93,
+        "ips": 26,
+        "team": "Home Boys",
+        "handicap": 14,
+        "np1": 5.0,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 79,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 79
+      },
+      {
+        "name": "Laurent Changuion",
+        "strokes": 90,
+        "ips": 25,
+        "team": "Tee Stingers",
+        "handicap": 8,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 82,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 82
+      },
+      {
+        "name": "Shaheen Boughan",
+        "strokes": 96,
+        "ips": 24,
+        "team": "Birdie Buddies",
+        "handicap": 11,
+        "np1": NaN,
+        "np2": 14.0,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 85,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 85
+      },
+      {
+        "name": "Eugene Dudley",
+        "strokes": 104,
+        "ips": 24,
+        "team": "Home Boys",
+        "handicap": 22,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 82,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 82
+      },
+      {
+        "name": "Jodi Van Niekerk",
+        "strokes": 100,
+        "ips": 24,
+        "team": "Tee Stingers",
+        "handicap": 15,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 85,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 85
+      },
+      {
+        "name": "Trevor Meyer",
+        "strokes": 110,
+        "ips": 18,
+        "team": "Fairway Fighters",
+        "handicap": 19,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 91,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 91
+      },
+      {
+        "name": "Ranzel Louw",
+        "strokes": 102,
+        "ips": 16,
+        "team": "Tee Tigers",
+        "handicap": 10,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": 92,
+        "pool_bet": "X",
+        "pool_payouts": NaN,
+        "fines": 20,
+        "nett": 92
+      }
+    ],
+    "best_gross": "Shawn Davies",
+    "best_nett": "John Barker",
+    "ox_nau": "Ranzel Louw",
+    "placements": [
+      {
+        "position": 1,
+        "name": "John Barker",
+        "ips": 38
+      },
+      {
+        "position": 2,
+        "name": "Arno Adonis",
+        "ips": 34
+      },
+      {
+        "position": 3,
+        "name": "Ronny Kaptein",
+        "ips": 34
+      },
+      {
+        "position": 4,
+        "name": "Shawn Davies",
+        "ips": 32
+      },
+      {
+        "position": 5,
+        "name": "Winston Willemse",
+        "ips": 32
+      },
+      {
+        "position": 6,
+        "name": "Lucien Barnes",
+        "ips": 30
+      },
+      {
+        "position": 7,
+        "name": "Pieter Gagiano",
+        "ips": 30
+      },
+      {
+        "position": 8,
+        "name": "Mika Moerat",
+        "ips": 28
+      },
+      {
+        "position": 9,
+        "name": "Dale Adonis",
+        "ips": 26
+      },
+      {
+        "position": 10,
+        "name": "Laurent Changuion",
+        "ips": 25
+      },
+      {
+        "position": 11,
+        "name": "Shaheen Boughan",
+        "ips": 24
+      },
+      {
+        "position": 12,
+        "name": "Eugene Dudley",
+        "ips": 24
+      },
+      {
+        "position": 13,
+        "name": "Jodi Van Niekerk",
+        "ips": 24
+      },
+      {
+        "position": 14,
+        "name": "Trevor Meyer",
+        "ips": 18
+      },
+      {
+        "position": 15,
+        "name": "Ranzel Louw",
+        "ips": 16
+      }
+    ],
+    "liv_totals": {
+      "Tee Tigers": 102,
+      "Home Boys": 84,
+      "Birdie Buddies": 56,
+      "Tee Stingers": 81,
+      "Fairway Fighters": 76
+    },
+    "pool_winner": "John Barker",
+    "fines_total": 300
+  },
+  "Jun'26": {
+    "course": "Services",
+    "players": [
+      {
+        "name": "John Barker",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Tigers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Arno Adonis",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Home Boys",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Ronny Kaptein",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Tigers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Shawn Davies",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Birdie Buddies",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Winston Willemse",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Stingers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Lucien Barnes",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Fairway Fighters",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Pieter Gagiano",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Tigers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Mika Moerat",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Fairway Fighters",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Dale Adonis",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Home Boys",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Laurent Changuion",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Stingers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Shaheen Boughan",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Birdie Buddies",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Eugene Dudley",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Home Boys",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Jodi Van Niekerk",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Stingers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Trevor Meyer",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Fairway Fighters",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Ranzel Louw",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Tigers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Bjorn Singh",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Birdie Buddies",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Godfrey Daniels",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Tigers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Arn Smith",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Home Boys",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Chad Naude",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Fairway Fighters",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      },
+      {
+        "name": "Warren Lottering",
+        "strokes": 0,
+        "ips": 0,
+        "team": "Tee Stingers",
+        "handicap": NaN,
+        "np1": NaN,
+        "np2": NaN,
+        "ld1": NaN,
+        "ld2": NaN,
+        "bg": NaN,
+        "bn": NaN,
+        "pool_bet": NaN,
+        "pool_payouts": NaN,
+        "fines": NaN,
+        "nett": null
+      }
+    ],
+    "best_gross": "John Barker",
+    "best_nett": null,
+    "ox_nau": "John Barker",
+    "placements": [
+      {
+        "position": 1,
+        "name": "John Barker",
+        "ips": 0
+      },
+      {
+        "position": 2,
+        "name": "Arno Adonis",
+        "ips": 0
+      },
+      {
+        "position": 3,
+        "name": "Ronny Kaptein",
+        "ips": 0
+      },
+      {
+        "position": 4,
+        "name": "Shawn Davies",
+        "ips": 0
+      },
+      {
+        "position": 5,
+        "name": "Winston Willemse",
+        "ips": 0
+      },
+      {
+        "position": 6,
+        "name": "Lucien Barnes",
+        "ips": 0
+      },
+      {
+        "position": 7,
+        "name": "Pieter Gagiano",
+        "ips": 0
+      },
+      {
+        "position": 8,
+        "name": "Mika Moerat",
+        "ips": 0
+      },
+      {
+        "position": 9,
+        "name": "Dale Adonis",
+        "ips": 0
+      },
+      {
+        "position": 10,
+        "name": "Laurent Changuion",
+        "ips": 0
+      },
+      {
+        "position": 11,
+        "name": "Shaheen Boughan",
+        "ips": 0
+      },
+      {
+        "position": 12,
+        "name": "Eugene Dudley",
+        "ips": 0
+      },
+      {
+        "position": 13,
+        "name": "Jodi Van Niekerk",
+        "ips": 0
+      },
+      {
+        "position": 14,
+        "name": "Trevor Meyer",
+        "ips": 0
+      },
+      {
+        "position": 15,
+        "name": "Ranzel Louw",
+        "ips": 0
+      },
+      {
+        "position": 16,
+        "name": "Bjorn Singh",
+        "ips": 0
+      },
+      {
+        "position": 17,
+        "name": "Godfrey Daniels",
+        "ips": 0
+      },
+      {
+        "position": 18,
+        "name": "Arn Smith",
+        "ips": 0
+      },
+      {
+        "position": 19,
+        "name": "Chad Naude",
+        "ips": 0
+      },
+      {
+        "position": 20,
+        "name": "Warren Lottering",
+        "ips": 0
+      }
+    ],
+    "liv_totals": {
+      "Tee Tigers": 0,
+      "Home Boys": 0,
+      "Birdie Buddies": 0,
+      "Tee Stingers": 0,
+      "Fairway Fighters": 0
+    },
+    "pool_winner": "John Barker",
+    "fines_total": NaN
+  }
+}

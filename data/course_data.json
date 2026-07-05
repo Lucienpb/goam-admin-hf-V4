@@ -1,0 +1,8127 @@
+{
+  "ADELAIDE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 104.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 114.0,
+        "rating": 70.0,
+        "par": 72
+      }
+    }
+  },
+  "AKASIA COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "ALBERTINIA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 109.0,
+        "rating": 66.2,
+        "par": 72
+      }
+    }
+  },
+  "ALEXANDERBAAI GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 112.0,
+        "rating": 62.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 67.7,
+        "par": 72
+      }
+    }
+  },
+  "ALEXANDRIA GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.3,
+        "par": 72
+      }
+    }
+  },
+  "ALIWAL NORTH GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 105.0,
+        "rating": 66.3,
+        "par": 72
+      }
+    }
+  },
+  "AMANDELBULT GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 65.4,
+        "par": 72
+      }
+    }
+  },
+  "AMANZIMTOTI COUNTRY CLUB (T": {
+    "tees": {
+      "ERed": {
+        "slope": 109.0,
+        "rating": 63.2,
+        "par": 70
+      },
+      "EWhite": {
+        "slope": 114.0,
+        "rating": 67.0,
+        "par": 70
+      }
+    }
+  },
+  "AMATIKULU COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 128.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "AMERSFOORT GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 114.0,
+        "rating": 66.0,
+        "par": 72
+      }
+    }
+  },
+  "AMPHITHEATRE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 63.8,
+        "par": 72
+      }
+    }
+  },
+  "ARABELLA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 114.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 108.0,
+        "rating": 66.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "ARENDSKRAAL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 110.0,
+        "rating": 64.5,
+        "par": 70
+      }
+    }
+  },
+  "ARNOT GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 71.1,
+        "par": 72
+      }
+    }
+  },
+  "ATLANTIC BEACH LINKS": {
+    "tees": {
+      "Blue": {
+        "slope": 114.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 109.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.8,
+        "par": 72
+      }
+    }
+  },
+  "AVION PARK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 65.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "BADPLAAS GOLF CLUB": {
+    "tees": {
+      "Pink": {
+        "slope": 113.0,
+        "rating": 65.1,
+        "par": 70
+      },
+      "Red": {
+        "slope": 123.0,
+        "rating": 68.9,
+        "par": 70
+      }
+    }
+  },
+  "BALKFONTEIN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 69.3,
+        "par": 70
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 65.5,
+        "par": 70
+      }
+    }
+  },
+  "BANKENVELD GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "BARBERTON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 118.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "BARKLY EAST GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 116.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 102.0,
+        "rating": 64.9,
+        "par": 72
+      }
+    }
+  },
+  "Beachwood Golf Club": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "BEAUFORT WEST GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 64.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 71.0,
+        "par": 72
+      }
+    }
+  },
+  "BEDFORD GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 106.0,
+        "rating": 64.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 115.0,
+        "rating": 69.5,
+        "par": 72
+      }
+    }
+  },
+  "BELFAST GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 116.0,
+        "rating": 65.8,
+        "par": 72
+      }
+    }
+  },
+  "BELLVILLE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "BENONI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 72.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 74.8,
+        "par": 72
+      }
+    }
+  },
+  "BENONI LAKE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "BERG RIVER GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 65.3,
+        "par": 72
+      }
+    }
+  },
+  "BETHAL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Front": {
+        "slope": 117.0,
+        "rating": 67.8,
+        "par": 72
+      }
+    }
+  },
+  "BETHLEHEM GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "BETHULIE GHOLFKLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 64.1,
+        "par": 72
+      }
+    }
+  },
+  "BLACK MOUNTAIN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 105.0,
+        "rating": 64.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 72.1,
+        "par": 72
+      }
+    }
+  },
+  "BLAIR ATHOLL": {
+    "tees": {
+      "Black": {
+        "slope": 146.0,
+        "rating": 78.5,
+        "par": 72
+      },
+      "Bronze": {
+        "slope": 118.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Gold": {
+        "slope": 141.0,
+        "rating": 74.4,
+        "par": 72
+      },
+      "Silver": {
+        "slope": 132.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 115.0,
+        "rating": 65.1,
+        "par": 72
+      }
+    }
+  },
+  "BLOEMFONTEIN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 74.0,
+        "par": 72
+      }
+    }
+  },
+  "BLOEMHOF GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 109.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 116.0,
+        "rating": 69.7,
+        "par": 72
+      }
+    }
+  },
+  "BLUE VALLEY GOLF & COUNTRY": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 141.0,
+        "rating": 75.1,
+        "par": 72
+      }
+    }
+  },
+  "BLUFF NATIONAL PARK GOLF CLU": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 106.0,
+        "rating": 65.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "BOGGOMSBAAI GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 122.0,
+        "rating": 65.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "BONNIEVALE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "BOSCH HOEK COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 130.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "BOSCHENMEER COURSE (19-9)": {
+    "tees": {
+      "Blue Boschenme": {
+        "slope": 127.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red Boschenme": {
+        "slope": 116.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White Boschenm": {
+        "slope": 132.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "BOTHAVILLE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "BRANDFORT GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 119.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 103.0,
+        "rating": 62.2,
+        "par": 72
+      }
+    }
+  },
+  "BREDASDORP GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "BRONKHORSTSPRUIT GOLF CLU B": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "BULTFONTEIN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 123.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.4,
+        "par": 72
+      }
+    }
+  },
+  "BURGERSDORP GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.2,
+        "par": 70
+      }
+    }
+  },
+  "CALEDON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 68.2,
+        "par": 73
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.5,
+        "par": 73
+      }
+    }
+  },
+  "CALVINIA GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 109.0,
+        "rating": 66.2,
+        "par": 72
+      }
+    }
+  },
+  "CAMELOT COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 67.8,
+        "par": 70
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 64.1,
+        "par": 70
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 69.5,
+        "par": 70
+      }
+    }
+  },
+  "CARNARVON GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 125.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "CAROLINA GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 65.2,
+        "par": 72
+      }
+    }
+  },
+  "CATHCART GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 116.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Front": {
+        "slope": 107.0,
+        "rating": 66.0,
+        "par": 72
+      }
+    }
+  },
+  "CATHEDRAL PEAK GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 69.4,
+        "par": 70
+      },
+      "Front": {
+        "slope": 115.0,
+        "rating": 65.0,
+        "par": 71
+      }
+    }
+  },
+  "CATO RIDGE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 118.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "CCJ - WOODMEAD": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 74.8,
+        "par": 72
+      }
+    }
+  },
+  "CCJ- ROCKLANDS": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 142.0,
+        "rating": 74.5,
+        "par": 72
+      }
+    }
+  },
+  "CCJ- ROCKMEAD": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 71.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 74.2,
+        "par": 72
+      }
+    }
+  },
+  "CCJ- WOODLANDS": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 140.0,
+        "rating": 75.1,
+        "par": 72
+      }
+    }
+  },
+  "CENTRAL DURBAN GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "CENTURION CC - PAR 71 (HOLE 1": {
+    "tees": {
+      "6Blue": {
+        "slope": 127.0,
+        "rating": 69.7,
+        "par": 71
+      },
+      "6Green": {
+        "slope": 115.0,
+        "rating": 64.7,
+        "par": 71
+      },
+      "6Red": {
+        "slope": 115.0,
+        "rating": 67.1,
+        "par": 71
+      },
+      "6White": {
+        "slope": 131.0,
+        "rating": 71.6,
+        "par": 71
+      },
+      "6Yellow": {
+        "slope": 134.0,
+        "rating": 72.8,
+        "par": 71
+      }
+    }
+  },
+  "CENTURION CC - PAR 72": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Green": {
+        "slope": 116.0,
+        "rating": 65.4,
+        "par": 72
+      },
+      "Hennops": {
+        "slope": 135.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "John Vorster": {
+        "slope": 122.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 73.9,
+        "par": 72
+      }
+    }
+  },
+  "CERES GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 70.0,
+        "par": 72
+      }
+    }
+  },
+  "CHAMPAGNE SPORTS RESORT": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 64.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 141.0,
+        "rating": 72.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 148.0,
+        "rating": 75.5,
+        "par": 72
+      }
+    }
+  },
+  "CHRISTIANA GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.8,
+        "par": 72
+      }
+    }
+  },
+  "CHROME GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 72.1,
+        "par": 72
+      },
+      "Front": {
+        "slope": 111.0,
+        "rating": 66.6,
+        "par": 72
+      }
+    }
+  },
+  "CITRUSDAL GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 106.0,
+        "rating": 65.5,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 112.0,
+        "rating": 68.9,
+        "par": 70
+      }
+    }
+  },
+  "CLANWILLIAM GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "CLARENS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 129.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 65.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 145.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 145.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "CLOCOLAN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 114.0,
+        "rating": 65.3,
+        "par": 72
+      }
+    }
+  },
+  "CLOVELLY COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "CMR GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 71.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 73.3,
+        "par": 72
+      }
+    }
+  },
+  "COLESBERG GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 107.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 114.0,
+        "rating": 70.4,
+        "par": 72
+      }
+    }
+  },
+  "COTSWOLD DOWNS GOLF COUR": {
+    "tees": {
+      "SBlack": {
+        "slope": 145.0,
+        "rating": 75.8,
+        "par": 72
+      },
+      "SBlue": {
+        "slope": 139.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "SRed": {
+        "slope": 133.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "SWhite": {
+        "slope": 140.0,
+        "rating": 71.9,
+        "par": 72
+      },
+      "SYellow": {
+        "slope": 143.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "CRADOCK GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 135.0,
+        "rating": 73.1,
+        "par": 73
+      },
+      "Front": {
+        "slope": 123.0,
+        "rating": 67.6,
+        "par": 73
+      }
+    }
+  },
+  "CULLINAN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "DAINFERN COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 136.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 126.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 74.9,
+        "par": 72
+      }
+    }
+  },
+  "DARKIES GOLF CLUB - AMATIKUL": {
+    "tees": {
+      "UBack": {
+        "slope": 128.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "UFront": {
+        "slope": 119.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "DARLING GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 64.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 70.3,
+        "par": 72
+      }
+    }
+  },
+  "DARNALL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Front": {
+        "slope": 121.0,
+        "rating": 67.1,
+        "par": 73
+      }
+    }
+  },
+  "DAVEYTON GOLF CLUB": {
+    "tees": {
+      "Yellow": {
+        "slope": 123.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "DE AAR GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Front": {
+        "slope": 107.0,
+        "rating": 64.2,
+        "par": 72
+      }
+    }
+  },
+  "De H0ek Golf Club": {
+    "tees": {
+      "Back": {
+        "slope": 129.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Front": {
+        "slope": 125.0,
+        "rating": 68.4,
+        "par": 72
+      }
+    }
+  },
+  "DE ZALZE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "Green": {
+        "slope": 112.0,
+        "rating": 64.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "DELAREYVILLE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 112.0,
+        "rating": 68.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 102.0,
+        "rating": 64.3,
+        "par": 72
+      }
+    }
+  },
+  "DELMAS GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 116.0,
+        "rating": 68.5,
+        "par": 72
+      }
+    }
+  },
+  "DEVONVALE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 109.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 120.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "Devonvale Short Course": {
+    "tees": {
+      "Black": {
+        "slope": 88.0,
+        "rating": 55.9,
+        "par": 56
+      }
+    }
+  },
+  "DEWETSDORP GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 132.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Front": {
+        "slope": 122.0,
+        "rating": 68.4,
+        "par": 72
+      }
+    }
+  },
+  "DOLPHINS CREEK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 99.0,
+        "rating": 58.6,
+        "par": 64
+      },
+      "Yellow": {
+        "slope": 103.0,
+        "rating": 60.3,
+        "par": 64
+      }
+    }
+  },
+  "DORDRECHT COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 118.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "DOUGLAS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 101.0,
+        "rating": 64.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "Drakensberg Gardens GC": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 107.0,
+        "rating": 63.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 122.0,
+        "rating": 70.2,
+        "par": 72
+      }
+    }
+  },
+  "DRAKENSIG GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 123.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "DUNDEE COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.8,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 72.1,
+        "par": 71
+      }
+    }
+  },
+  "DURBAN COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "DURBAN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "DURBANVILLE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "EAGLE CANYON": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 73.9,
+        "par": 72
+      }
+    }
+  },
+  "EAST LONDON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 129.0,
+        "rating": 70.2,
+        "par": 73
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 68.1,
+        "par": 73
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 71.9,
+        "par": 73
+      }
+    }
+  },
+  "EBOTSE LINKS": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 75.2,
+        "par": 72
+      }
+    }
+  },
+  "EDENBURG GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 64.6,
+        "par": 72
+      }
+    }
+  },
+  "ELEMENTS PRIVATE GOLF RESER": {
+    "tees": {
+      "Blue": {
+        "slope": 135.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 125.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 142.0,
+        "rating": 73.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 147.0,
+        "rating": 76.1,
+        "par": 72
+      }
+    }
+  },
+  "ELLIOT GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 70.2,
+        "par": 72
+      }
+    }
+  },
+  "EMFULENI COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 118.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 138.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "EMPANGENI COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "ERINVALE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 129.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 74.6,
+        "par": 72
+      }
+    }
+  },
+  "ERMELO GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "ERPM GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 131.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "ESHOWE COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 123.0,
+        "rating": 70.2,
+        "par": 72
+      }
+    }
+  },
+  "ESTCOURT GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "Euphoria Golf & Lifestyle Estate": {
+    "tees": {
+      "Blue": {
+        "slope": 132.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 74.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 148.0,
+        "rating": 76.8,
+        "par": 72
+      }
+    }
+  },
+  "EYE OF AFRICA GOLF CLUB": {
+    "tees": {
+      "Black": {
+        "slope": 152.0,
+        "rating": 76.8,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 115.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 107.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 145.0,
+        "rating": 74.6,
+        "par": 72
+      }
+    }
+  },
+  "FAIRVIEW GOLF ESTATE": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 64.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 68.4,
+        "par": 72
+      }
+    }
+  },
+  "FAIRWAYS VIRTUAL GOLF CLUB": {
+    "tees": {
+      "Fairways Virtual": {
+        "slope": 113.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "FANCOURT - MONTAGU": {
+    "tees": {
+      "Black": {
+        "slope": 137.0,
+        "rating": 75.2,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 120.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "FANCOURT - OUTENIQUA": {
+    "tees": {
+      "Black": {
+        "slope": 132.0,
+        "rating": 73.9,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 71.4,
+        "par": 72
+      }
+    }
+  },
+  "FELIXTON COUNTRY CLUB": {
+    "tees": {
+      "White": {
+        "slope": 84.0,
+        "rating": 51.3,
+        "par": 54
+      }
+    }
+  },
+  "FICKSBURG GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "FISH RIVER RESORT": {
+    "tees": {
+      "Green": {
+        "slope": 136.0,
+        "rating": 73.3,
+        "par": 72
+      },
+      "Pink": {
+        "slope": 124.0,
+        "rating": 68.4,
+        "par": 73
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 74.9,
+        "par": 72
+      }
+    }
+  },
+  "FORT BEAUFORT GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "FRANKFORT GHOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "FYNBOS GOLF & COUNTRY ESTA T": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "GANSBAAI GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 106.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 113.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "GARY PLAYER COUNTRY CLUB": {
+    "tees": {
+      "Burgandy": {
+        "slope": 155.0,
+        "rating": 78.2,
+        "par": 72
+      },
+      "Green": {
+        "slope": 151.0,
+        "rating": 75.2,
+        "par": 72
+      },
+      "Light Green": {
+        "slope": 131.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 144.0,
+        "rating": 72.2,
+        "par": 72
+      }
+    }
+  },
+  "GENESIS GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "GEORGE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "GERMISTON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 72.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 74.2,
+        "par": 72
+      }
+    }
+  },
+  "GLENCOE CORR SERVICES GC": {
+    "tees": {
+      "Back": {
+        "slope": 134.0,
+        "rating": 72.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 125.0,
+        "rating": 68.5,
+        "par": 72
+      }
+    }
+  },
+  "GLENDOWER GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 135.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 129.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 142.0,
+        "rating": 74.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 146.0,
+        "rating": 76.3,
+        "par": 72
+      }
+    }
+  },
+  "GLENVISTA COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 138.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 142.0,
+        "rating": 73.8,
+        "par": 72
+      }
+    }
+  },
+  "Glenwood Golf Club": {
+    "tees": {
+      "Red": {
+        "slope": 77.0,
+        "rating": 54.9,
+        "par": 58
+      },
+      "White": {
+        "slope": 82.0,
+        "rating": 57.1,
+        "par": 58
+      }
+    }
+  },
+  "GOLDFIELDS WEST GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "GONUBIE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "GOOSE VALLEY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "GOWRIE FARM GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.0,
+        "par": 71
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.3,
+        "par": 71
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.4,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 73.0,
+        "par": 71
+      }
+    }
+  },
+  "GRAAFF-REINET GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "GRACELAND COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 72.4,
+        "par": 72
+      }
+    }
+  },
+  "GREATER DURBAN GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "GREENSIDE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Front": {
+        "slope": 111.0,
+        "rating": 66.6,
+        "par": 72
+      }
+    }
+  },
+  "GREYTOWN COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 69.7,
+        "par": 70
+      },
+      "White": {
+        "slope": 113.0,
+        "rating": 66.5,
+        "par": 71
+      }
+    }
+  },
+  "GROBLERSDAL GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "HANKEY GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "HANS MERENSKY GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "HARDING GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 131.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 122.0,
+        "rating": 66.9,
+        "par": 72
+      }
+    }
+  },
+  "HARRISMITH COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "HARTSWATER GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "HEIDELBERG GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 73.1,
+        "par": 72
+      }
+    }
+  },
+  "HEIDELBERG GOLF CLUB (CAPE)": {
+    "tees": {
+      "Red": {
+        "slope": 113.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 121.0,
+        "rating": 69.4,
+        "par": 72
+      }
+    }
+  },
+  "HEILBRON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 136.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 129.0,
+        "rating": 67.9,
+        "par": 72
+      }
+    }
+  },
+  "Hermanus: East Course (1-18)": {
+    "tees": {
+      "Black": {
+        "slope": 130.0,
+        "rating": 74.6,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 116.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 72.7,
+        "par": 72
+      }
+    }
+  },
+  "Hermanus: North Course (19-9)": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 68.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 73.4,
+        "par": 72
+      }
+    }
+  },
+  "Hermanus: South Course (10-27)": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "HERON BANKS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 70.0,
+        "par": 71
+      },
+      "Red": {
+        "slope": 128.0,
+        "rating": 67.9,
+        "par": 71
+      },
+      "White": {
+        "slope": 141.0,
+        "rating": 72.1,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 145.0,
+        "rating": 74.0,
+        "par": 71
+      }
+    }
+  },
+  "HEX VALLEY GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 110.0,
+        "rating": 64.7,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 119.0,
+        "rating": 68.6,
+        "par": 70
+      }
+    }
+  },
+  "HIGHLAND GATE": {
+    "tees": {
+      "UBlue": {
+        "slope": 135.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "UGreen": {
+        "slope": 146.0,
+        "rating": 73.9,
+        "par": 72
+      },
+      "URed": {
+        "slope": 119.0,
+        "rating": 63.7,
+        "par": 72
+      },
+      "UWhite": {
+        "slope": 139.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "HILLSIDE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 116.0,
+        "rating": 67.3,
+        "par": 70
+      },
+      "Front": {
+        "slope": 105.0,
+        "rating": 63.1,
+        "par": 70
+      }
+    }
+  },
+  "HOOPSTAD GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 131.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.0,
+        "par": 72
+      }
+    }
+  },
+  "HOPETOWN GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 113.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "HOTAZEL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 102.0,
+        "rating": 59.3,
+        "par": 60
+      }
+    }
+  },
+  "HOUGHTON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 136.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 142.0,
+        "rating": 72.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 145.0,
+        "rating": 74.4,
+        "par": 72
+      }
+    }
+  },
+  "HOWICK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "HUDDLE PARK GOLF AND RECRE": {
+    "tees": {
+      "ABlue": {
+        "slope": 122.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "ARed": {
+        "slope": 113.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "AWhite": {
+        "slope": 124.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "Humewood Golf Club": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 72.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "HUNTERS REST PAR 3 GOLF COU": {
+    "tees": {
+      "Red": {
+        "slope": 88.0,
+        "rating": 51.8,
+        "par": 54
+      }
+    }
+  },
+  "Indwe Golf Club": {
+    "tees": {
+      "Back": {
+        "slope": 115.0,
+        "rating": 69.4,
+        "par": 70
+      },
+      "Front": {
+        "slope": 109.0,
+        "rating": 66.5,
+        "par": 72
+      }
+    }
+  },
+  "IRENE COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 125.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 73.9,
+        "par": 72
+      }
+    }
+  },
+  "JACKAL CREEK GOLF COURSE": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 141.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "JACOBSDAL GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 122.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "JAGERSFONTEIN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "JAN KEMP GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 72.4,
+        "par": 72
+      }
+    }
+  },
+  "JEFFREYS BAY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 68.3,
+        "par": 72
+      }
+    }
+  },
+  "KAKAMAS GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 120.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 108.0,
+        "rating": 64.4,
+        "par": 72
+      }
+    }
+  },
+  "Kambaku Golf Club Komatipoort": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "KAMEELDORING GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 109.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 114.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "KATBERG ECO GOLF & COUNTRY": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 106.0,
+        "rating": 64.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 69.9,
+        "par": 72
+      }
+    }
+  },
+  "KEI MOUTH GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 68.9,
+        "par": 73
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.3,
+        "par": 73
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 70.4,
+        "par": 73
+      }
+    }
+  },
+  "KEMPTON PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 71.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "KESTELL COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "KILBARCHAN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 134.0,
+        "rating": 72.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 123.0,
+        "rating": 67.4,
+        "par": 72
+      }
+    }
+  },
+  "KIMBERLEY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 72.2,
+        "par": 72
+      }
+    }
+  },
+  "KING DAVID MOWBRAY GOLF CLU": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "KING WILLIAMSTOWN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 71.1,
+        "par": 72
+      }
+    }
+  },
+  "KINGSWOOD GOLF ESTATE": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "KIRKWOOD GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 128.0,
+        "rating": 72.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 67.8,
+        "par": 72
+      }
+    }
+  },
+  "KLEINMOND GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 116.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "KLEINZEE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 63.7,
+        "par": 72
+      }
+    }
+  },
+  "Klerksdorp Golf Club": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 121.0,
+        "rating": 68.9,
+        "par": 72
+      }
+    }
+  },
+  "KLOOF COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.4,
+        "par": 70
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 69.6,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 70.3,
+        "par": 70
+      }
+    }
+  },
+  "KNYSNA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 70.3,
+        "par": 72
+      }
+    }
+  },
+  "KOFFIEFONTEIN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "KOKSTAD GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 117.0,
+        "rating": 66.1,
+        "par": 72
+      }
+    }
+  },
+  "KOMGA GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 127.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Front": {
+        "slope": 124.0,
+        "rating": 67.2,
+        "par": 72
+      }
+    }
+  },
+  "KORO CREEK BUSHVELD GOLF E": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Gold": {
+        "slope": 140.0,
+        "rating": 74.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "KOSTER GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 120.0,
+        "rating": 69.6,
+        "par": 70
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 64.6,
+        "par": 70
+      }
+    }
+  },
+  "KRAGGA KAMMA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 105.0,
+        "rating": 64.2,
+        "par": 68
+      },
+      "Red": {
+        "slope": 93.0,
+        "rating": 63.9,
+        "par": 68
+      }
+    }
+  },
+  "KRANSPOORT GOLF CLUB": {
+    "tees": {
+      "Front": {
+        "slope": 106.0,
+        "rating": 63.4,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 116.0,
+        "rating": 67.7,
+        "par": 70
+      }
+    }
+  },
+  "KRIEL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 72.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 67.0,
+        "par": 72
+      }
+    }
+  },
+  "KROONSTAD COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 118.0,
+        "rating": 72.7,
+        "par": 72
+      }
+    }
+  },
+  "KRUGER PARK LODGE GOLF COU": {
+    "tees": {
+      "White": {
+        "slope": 105.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 71.4,
+        "par": 72
+      }
+    }
+  },
+  "KRUGERSDORP GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Green": {
+        "slope": 118.0,
+        "rating": 62.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 73.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 75.2,
+        "par": 72
+      }
+    }
+  },
+  "KUILSRIVIER GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 65.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 119.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "KURUMAN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 135.0,
+        "rating": 71.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 122.0,
+        "rating": 67.1,
+        "par": 72
+      }
+    }
+  },
+  "KWAMBONAMBI GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 120.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 115.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "KYALAMI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 130.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 73.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 138.0,
+        "rating": 74.7,
+        "par": 72
+      }
+    }
+  },
+  "LADISMITH GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 106.0,
+        "rating": 64.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 122.0,
+        "rating": 69.2,
+        "par": 72
+      }
+    }
+  },
+  "LADY GREY GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 97.0,
+        "rating": 66.1,
+        "par": 72
+      }
+    }
+  },
+  "LADYBRAND SPORTS CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 130.0,
+        "rating": 71.9,
+        "par": 72
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 66.8,
+        "par": 72
+      }
+    }
+  },
+  "LADYSMITH COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.4,
+        "par": 71
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 69.4,
+        "par": 71
+      }
+    }
+  },
+  "Lamberts Bay Golf Club": {
+    "tees": {
+      "Back": {
+        "slope": 116.0,
+        "rating": 71.9,
+        "par": 73
+      }
+    }
+  },
+  "LANDBOU GOLF CLUB POTCH": {
+    "tees": {
+      "Back": {
+        "slope": 140.0,
+        "rating": 71.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 126.0,
+        "rating": 65.8,
+        "par": 72
+      }
+    }
+  },
+  "LANGEBAAN GOLF & SPORTS CL U": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 71.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "LANGKLOOF GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 70.2,
+        "par": 73
+      },
+      "Red": {
+        "slope": 106.0,
+        "rating": 66.2,
+        "par": 73
+      }
+    }
+  },
+  "LEOPARD CREEK": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Gold": {
+        "slope": 147.0,
+        "rating": 76.0,
+        "par": 72
+      },
+      "Green": {
+        "slope": 124.0,
+        "rating": 64.8,
+        "par": 72
+      },
+      "Ingwe": {
+        "slope": 137.0,
+        "rating": 73.1,
+        "par": 72
+      },
+      "Inkwazi": {
+        "slope": 134.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 129.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 141.0,
+        "rating": 73.3,
+        "par": 72
+      }
+    }
+  },
+  "LEOPARD PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Pink": {
+        "slope": 124.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 136.0,
+        "rating": 75.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "Lichtenburg Golf Course": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 122.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "LIME ACRES GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "LOERIESFONTEIN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 111.0,
+        "rating": 69.1,
+        "par": 70
+      }
+    }
+  },
+  "LOST CITY GOLF COURSE": {
+    "tees": {
+      "Green": {
+        "slope": 145.0,
+        "rating": 73.4,
+        "par": 72
+      },
+      "Light Green": {
+        "slope": 121.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 141.0,
+        "rating": 70.9,
+        "par": 72
+      }
+    }
+  },
+  "LUTZVILLE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 125.0,
+        "rating": 69.2,
+        "par": 71
+      },
+      "Front": {
+        "slope": 116.0,
+        "rating": 66.0,
+        "par": 71
+      }
+    }
+  },
+  "Lydenburg Gholf Klub": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 117.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "Column1": {
+    "tees": {
+      "Column2": {
+        "slope": 0.0,
+        "rating": 0.0,
+        "par": 0
+      }
+    }
+  },
+  "MACCAUVLEI GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 74.3,
+        "par": 72
+      }
+    }
+  },
+  "MACLEAR GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 114.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "MAGALIESPARK COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 64.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "MAGERSFONTEIN MEMORIAL GOLF CL": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 134.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "Maidstone Golf Club": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 69.2,
+        "par": 71
+      },
+      "Front": {
+        "slope": 114.0,
+        "rating": 65.6,
+        "par": 71
+      }
+    }
+  },
+  "MALELANE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "MALMESBURY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 107.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 71.4,
+        "par": 72
+      }
+    }
+  },
+  "MANDINI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 104.0,
+        "rating": 64.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 112.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 114.0,
+        "rating": 67.9,
+        "par": 72
+      }
+    }
+  },
+  "MARBLE HALL GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "MARGATE COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 66.7,
+        "par": 71
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 65.7,
+        "par": 71
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 69.7,
+        "par": 71
+      }
+    }
+  },
+  "MARITZBURG GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 71.1,
+        "par": 72
+      }
+    }
+  },
+  "MARQUARD GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "MASERU GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 107.0,
+        "rating": 64.0,
+        "par": 72
+      }
+    }
+  },
+  "MATATIELE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 125.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 115.0,
+        "rating": 66.5,
+        "par": 72
+      }
+    }
+  },
+  "Mbombela Golf Club": {
+    "tees": {
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.8,
+        "par": 71
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.8,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 68.4,
+        "par": 71
+      }
+    }
+  },
+  "MESSINA GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 65.2,
+        "par": 72
+      }
+    }
+  },
+  "METROPOLITAN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 110.0,
+        "rating": 67.8,
+        "par": 70
+      },
+      "Red": {
+        "slope": 106.0,
+        "rating": 65.4,
+        "par": 70
+      },
+      "White": {
+        "slope": 115.0,
+        "rating": 69.9,
+        "par": 70
+      }
+    }
+  },
+  "MEYERTON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 73.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 75.7,
+        "par": 72
+      }
+    }
+  },
+  "MIDDELBURG COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "MIDDELBURG GOLF CLUB (KAROO)": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 119.0,
+        "rating": 72.1,
+        "par": 72
+      }
+    }
+  },
+  "MILLVALE GOLF COURSE": {
+    "tees": {
+      "Black": {
+        "slope": 148.0,
+        "rating": 75.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 126.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 140.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "MILNERTON GOLF CLUB": {
+    "tees": {
+      "Red (71)": {
+        "slope": 111.0,
+        "rating": 67.1,
+        "par": 71
+      },
+      "Red (72)": {
+        "slope": 112.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "White (71)": {
+        "slope": 115.0,
+        "rating": 69.4,
+        "par": 71
+      },
+      "White (72)": {
+        "slope": 116.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Yellow (71)": {
+        "slope": 120.0,
+        "rating": 71.5,
+        "par": 71
+      },
+      "Yellow (72)": {
+        "slope": 122.0,
+        "rating": 72.4,
+        "par": 72
+      }
+    }
+  },
+  "MODDERFONTEIN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 72.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 74.4,
+        "par": 72
+      }
+    }
+  },
+  "MOGOL GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "MOLTENO GOLF CLUB": {
+    "tees": {
+      "Front": {
+        "slope": 112.0,
+        "rating": 66.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "MONKS COWL COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 117.0,
+        "rating": 66.8,
+        "par": 70
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 63.2,
+        "par": 70
+      }
+    }
+  },
+  "MONTAGU GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 111.0,
+        "rating": 65.5,
+        "par": 72
+      }
+    }
+  },
+  "MONZI GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 130.0,
+        "rating": 70.4,
+        "par": 71
+      },
+      "Front": {
+        "slope": 120.0,
+        "rating": 66.2,
+        "par": 71
+      }
+    }
+  },
+  "MOOI RIVER COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 114.0,
+        "rating": 67.1,
+        "par": 72
+      }
+    }
+  },
+  "MOOINOOI GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 132.0,
+        "rating": 73.0,
+        "par": 72
+      },
+      "Front": {
+        "slope": 123.0,
+        "rating": 68.3,
+        "par": 72
+      }
+    }
+  },
+  "MOORREESBURG GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 118.0,
+        "rating": 69.9,
+        "par": 70
+      },
+      "Front": {
+        "slope": 109.0,
+        "rating": 65.5,
+        "par": 70
+      }
+    }
+  },
+  "MORGENZON GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 66.0,
+        "par": 72
+      }
+    }
+  },
+  "MOSSEL BAY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "MTUNZINI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 68.1,
+        "par": 71
+      },
+      "Red": {
+        "slope": 105.0,
+        "rating": 65.5,
+        "par": 71
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 69.4,
+        "par": 71
+      }
+    }
+  },
+  "NABOOMSPRUIT GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "NEWCASTLE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "NIGEL GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 125.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 72.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 72.8,
+        "par": 72
+      }
+    }
+  },
+  "NOODSBERG COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 117.0,
+        "rating": 65.8,
+        "par": 71
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 69.8,
+        "par": 71
+      }
+    }
+  },
+  "OBSERVATORY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "OLIVEWOOD GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 136.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 128.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 143.0,
+        "rating": 72.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 148.0,
+        "rating": 74.1,
+        "par": 72
+      }
+    }
+  },
+  "OPPENHEIMER PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "ORKNEY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 73.2,
+        "par": 72
+      }
+    }
+  },
+  "OTTOSDAL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Front": {
+        "slope": 110.0,
+        "rating": 65.6,
+        "par": 72
+      }
+    }
+  },
+  "OUBAAI GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 69.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 105.0,
+        "rating": 66.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 140.0,
+        "rating": 75.0,
+        "par": 72
+      }
+    }
+  },
+  "OUDTSHOORN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "PAARL OLD COURSE (1-18)": {
+    "tees": {
+      "Blue Old Paarl": {
+        "slope": 127.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Red Old Paarl": {
+        "slope": 115.0,
+        "rating": 67.1,
+        "par": 72
+      },
+      "White Old Paarl": {
+        "slope": 134.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Yellow Old Paarl": {
+        "slope": 134.0,
+        "rating": 72.7,
+        "par": 72
+      }
+    }
+  },
+  "PAR 3 - BLUE VALLEY GOLF ESTATE": {
+    "tees": {
+      "Orange": {
+        "slope": 74.0,
+        "rating": 48.9,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - BOSCHENMEER": {
+    "tees": {
+      "Orange": {
+        "slope": 71.0,
+        "rating": 50.6,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - CENTURION COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 76.0,
+        "rating": 50.0,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - DAINFERN COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 79.0,
+        "rating": 49.6,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - DURBANVILLE GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 73.0,
+        "rating": 49.5,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - EYE OF AFRICA GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 92.0,
+        "rating": 53.7,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - IRENE COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 84.0,
+        "rating": 51.4,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - KAMEELDORING GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 76.0,
+        "rating": 51.8,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - KRUGERSDORP GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 84.0,
+        "rating": 51.2,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - LADYSMITH COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 73.0,
+        "rating": 48.6,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - LIME ACRES GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 84.0,
+        "rating": 50.6,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - MALELANE GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 86.0,
+        "rating": 52.9,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - PAROW GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 76.0,
+        "rating": 50.9,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - PRETORIA GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 86.0,
+        "rating": 52.2,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - ST FRANCIS LINKS GOLF COUR": {
+    "tees": {
+      "SOrange": {
+        "slope": 80.0,
+        "rating": 51.4,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - STATE MINES COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 73.0,
+        "rating": 48.5,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - STELLENBOSCH GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 74.0,
+        "rating": 53.2,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - THE MASHIE": {
+    "tees": {
+      "Red": {
+        "slope": 65.0,
+        "rating": 44.8,
+        "par": 54
+      },
+      "White": {
+        "slope": 69.0,
+        "rating": 46.2,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - WATERKLOOF GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 74.0,
+        "rating": 50.0,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - WESTLAKE GOLF CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 73.0,
+        "rating": 51.6,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - WHISTLING THORN": {
+    "tees": {
+      "Blue": {
+        "slope": 104.0,
+        "rating": 55.0,
+        "par": 54
+      },
+      "Green": {
+        "slope": 92.0,
+        "rating": 50.9,
+        "par": 54
+      },
+      "Red": {
+        "slope": 97.0,
+        "rating": 52.1,
+        "par": 54
+      },
+      "White": {
+        "slope": 112.0,
+        "rating": 57.2,
+        "par": 54
+      },
+      "Yellow": {
+        "slope": 117.0,
+        "rating": 60.8,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 - ZIMBALI COUNTRY CLUB": {
+    "tees": {
+      "Orange": {
+        "slope": 82.0,
+        "rating": 52.2,
+        "par": 54
+      }
+    }
+  },
+  "PAR 3 \u2013 NJDC": {
+    "tees": {
+      "Blue": {
+        "slope": 103.0,
+        "rating": 53.8,
+        "par": 54
+      },
+      "Red": {
+        "slope": 96.0,
+        "rating": 49.6,
+        "par": 54
+      }
+    }
+  },
+  "PARKVIEW GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 73.5,
+        "par": 72
+      }
+    }
+  },
+  "PAROW GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "PARYS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 71.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 127.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 73.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 140.0,
+        "rating": 76.2,
+        "par": 72
+      }
+    }
+  },
+  "PAULPIETERSBURG COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 65.1,
+        "par": 72
+      }
+    }
+  },
+  "PEARL VALLEY GOLF CLUB": {
+    "tees": {
+      "Black": {
+        "slope": 134.0,
+        "rating": 75.5,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 129.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Green": {
+        "slope": 126.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 138.0,
+        "rating": 73.5,
+        "par": 72
+      }
+    }
+  },
+  "PEBBLE ROCK COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 68.2,
+        "par": 71
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 66.2,
+        "par": 71
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 71.5,
+        "par": 71
+      }
+    }
+  },
+  "PECANWOOD GOLF AND COUNTRY CLU": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Green": {
+        "slope": 130.0,
+        "rating": 75.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "PETRUS STEYN GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 121.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 115.0,
+        "rating": 67.9,
+        "par": 74
+      }
+    }
+  },
+  "PEZULA CHAMPIONSHIP COURSE": {
+    "tees": {
+      "Black": {
+        "slope": 137.0,
+        "rating": 74.4,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 127.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 64.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 72.1,
+        "par": 72
+      }
+    }
+  },
+  "PIET RETIEF GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 68.2,
+        "par": 72
+      }
+    }
+  },
+  "PILGRIMS REST GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 104.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "PINNACLE POINT GOLF CLUB": {
+    "tees": {
+      "Black": {
+        "slope": 142.0,
+        "rating": 75.9,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 129.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 144.0,
+        "rating": 73.6,
+        "par": 72
+      }
+    }
+  },
+  "PLETTENBERG BAY COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 72.1,
+        "par": 72
+      }
+    }
+  },
+  "POLLAK PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 73.1,
+        "par": 72
+      }
+    }
+  },
+  "POLOKWANE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.1,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 73.3,
+        "par": 72
+      }
+    }
+  },
+  "PONGOLA GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.4,
+        "par": 72
+      }
+    }
+  },
+  "PORT EDWARD COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 132.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 124.0,
+        "rating": 65.7,
+        "par": 72
+      }
+    }
+  },
+  "PORT ELIZABETH GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 68.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 72.2,
+        "par": 72
+      }
+    }
+  },
+  "PORT SHEPSTONE COUNTRY CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "PORT ST JOHNS GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 114.0,
+        "rating": 62.0,
+        "par": 66
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 61.0,
+        "par": 66
+      }
+    }
+  },
+  "PORTERVILLE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 65.0,
+        "par": 70
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 68.1,
+        "par": 70
+      }
+    }
+  },
+  "POTCHEFSTROOM COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "PRETORIA COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 127.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 73.8,
+        "par": 72
+      }
+    }
+  },
+  "PRETORIA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "PRIESKA GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 128.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Front": {
+        "slope": 117.0,
+        "rating": 65.6,
+        "par": 72
+      }
+    }
+  },
+  "PRINCE'S GRANT COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 134.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 123.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 140.0,
+        "rating": 71.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 141.0,
+        "rating": 74.1,
+        "par": 72
+      }
+    }
+  },
+  "PRINS ALBERT GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 112.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "QUEENSTOWN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 111.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 105.0,
+        "rating": 64.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 121.0,
+        "rating": 71.5,
+        "par": 72
+      }
+    }
+  },
+  "RANDPARK - BUSHWILLOW": {
+    "tees": {
+      "Gold": {
+        "slope": 123.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 73.4,
+        "par": 72
+      }
+    }
+  },
+  "RANDPARK - FIRETHORN": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "Gold": {
+        "slope": 128.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 72.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 141.0,
+        "rating": 74.4,
+        "par": 72
+      }
+    }
+  },
+  "READING COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 130.0,
+        "rating": 70.1,
+        "par": 71
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 66.6,
+        "par": 71
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.4,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 74.2,
+        "par": 71
+      }
+    }
+  },
+  "REITZ GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "REIVILO GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 106.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 98.0,
+        "rating": 65.8,
+        "par": 72
+      }
+    }
+  },
+  "RICHARDS BAY COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 67.6,
+        "par": 71
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 64.4,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 71.0,
+        "par": 71
+      }
+    }
+  },
+  "RICHMOND GOLF CLUB (KAROO)": {
+    "tees": {
+      "Back": {
+        "slope": 119.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "RICHMOND NATAL COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 68.9,
+        "par": 72
+      },
+      "Pink": {
+        "slope": 119.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 70.5,
+        "par": 72
+      }
+    }
+  },
+  "RIVERSDALE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 113.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 70.6,
+        "par": 72
+      }
+    }
+  },
+  "RIVERSIDE GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 121.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "RIVERSIDE GOLF CLUB KZN": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "RIVIERA ON VAAL COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 73.5,
+        "par": 72
+      }
+    }
+  },
+  "RIVIERSONDEREND GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "ROBERTSON GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 72.2,
+        "par": 72
+      }
+    }
+  },
+  "RONDEBOSCH GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL CAPE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 117.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL DURBAN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 119.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 72.7,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL JHB & KEN EAST COURSE": {
+    "tees": {
+      "Championship": {
+        "slope": 142.0,
+        "rating": 76.3,
+        "par": 72
+      },
+      "Classic": {
+        "slope": 119.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "Club": {
+        "slope": 135.0,
+        "rating": 73.6,
+        "par": 72
+      },
+      "Executive": {
+        "slope": 128.0,
+        "rating": 71.3,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL JHB & KEN WEST COURSE": {
+    "tees": {
+      "Blue": {
+        "slope": 137.0,
+        "rating": 73.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL OAK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 73.6,
+        "par": 72
+      }
+    }
+  },
+  "ROYAL PORT ALFRED": {
+    "tees": {
+      "Blue": {
+        "slope": 111.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "RUIMSIG COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 138.0,
+        "rating": 74.5,
+        "par": 72
+      }
+    }
+  },
+  "RUSTENBURG GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 73.3,
+        "par": 72
+      }
+    }
+  },
+  "SABI RIVER SUN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 66.5,
+        "par": 71
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 64.0,
+        "par": 71
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.3,
+        "par": 71
+      }
+    }
+  },
+  "SABIE COUNTRY CLUB": {
+    "tees": {
+      "White": {
+        "slope": 115.0,
+        "rating": 64.2,
+        "par": 68
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 68.5,
+        "par": 68
+      }
+    }
+  },
+  "SAKABULA GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 118.0,
+        "rating": 68.1,
+        "par": 73
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 65.1,
+        "par": 73
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 71.5,
+        "par": 73
+      }
+    }
+  },
+  "SAN LAMEER COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 138.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 128.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 143.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 147.0,
+        "rating": 73.4,
+        "par": 72
+      }
+    }
+  },
+  "SAND RIVER GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.4,
+        "par": 72
+      }
+    }
+  },
+  "SANDONIA GOLF CLUB": {
+    "tees": {
+      "Men": {
+        "slope": 111.0,
+        "rating": 66.6,
+        "par": 69
+      }
+    }
+  },
+  "SANDY LANE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 130.0,
+        "rating": 69.7,
+        "par": 70
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 65.7,
+        "par": 70
+      }
+    }
+  },
+  "SANNIESHOF GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 102.0,
+        "rating": 64.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 116.0,
+        "rating": 70.4,
+        "par": 72
+      }
+    }
+  },
+  "SAPS MECH GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 96.0,
+        "rating": 58.5,
+        "par": 60
+      },
+      "White": {
+        "slope": 102.0,
+        "rating": 60.2,
+        "par": 60
+      }
+    }
+  },
+  "SARDINIA BAY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 89.0,
+        "rating": 62.1,
+        "par": 64
+      },
+      "Yellow": {
+        "slope": 97.0,
+        "rating": 63.5,
+        "par": 64
+      }
+    }
+  },
+  "SCHOEMAN PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 72.9,
+        "par": 72
+      }
+    }
+  },
+  "SCHWEIZER-RENEKE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 111.0,
+        "rating": 66.3,
+        "par": 72
+      }
+    }
+  },
+  "SCOTTBURGH GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.2,
+        "par": 69
+      },
+      "White": {
+        "slope": 115.0,
+        "rating": 68.3,
+        "par": 69
+      }
+    }
+  },
+  "SELBORNE GOLF ESTATE": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 71.6,
+        "par": 72
+      }
+    }
+  },
+  "SENEKAL GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 116.0,
+        "rating": 70.7,
+        "par": 72
+      },
+      "Front": {
+        "slope": 106.0,
+        "rating": 65.6,
+        "par": 72
+      }
+    }
+  },
+  "SERENGETI GOLF ESTATE - THE SIGNA": {
+    "tees": {
+      "TBlue": {
+        "slope": 128.0,
+        "rating": 69.9,
+        "par": 72
+      },
+      "TRed": {
+        "slope": 116.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "TWhite": {
+        "slope": 139.0,
+        "rating": 72.1,
+        "par": 72
+      },
+      "TYellow": {
+        "slope": 151.0,
+        "rating": 76.9,
+        "par": 72
+      }
+    }
+  },
+  "SERVICES GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 73.0,
+        "par": 72
+      }
+    }
+  },
+  "Sesambos Golf Club": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 72.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 74.3,
+        "par": 72
+      }
+    }
+  },
+  "SHELLEY POINT GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 121.0,
+        "rating": 70.0,
+        "par": 72
+      }
+    }
+  },
+  "SILVER LAKES": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 124.0,
+        "rating": 67.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 138.0,
+        "rating": 74.4,
+        "par": 72
+      }
+    }
+  },
+  "SIMBITHI GOLF COURSE": {
+    "tees": {
+      "Blue": {
+        "slope": 102.0,
+        "rating": 59.7,
+        "par": 60
+      },
+      "Red": {
+        "slope": 97.0,
+        "rating": 58.7,
+        "par": 60
+      },
+      "White": {
+        "slope": 104.0,
+        "rating": 60.7,
+        "par": 60
+      },
+      "Yellow": {
+        "slope": 106.0,
+        "rating": 61.5,
+        "par": 60
+      }
+    }
+  },
+  "SIMOLA ESTATE & COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 136.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "SIMONSTOWN GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 62.7,
+        "par": 66
+      },
+      "White": {
+        "slope": 118.0,
+        "rating": 63.8,
+        "par": 66
+      }
+    }
+  },
+  "SISHEN GOLF & COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 131.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 126.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 142.0,
+        "rating": 73.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 143.0,
+        "rating": 74.8,
+        "par": 72
+      }
+    }
+  },
+  "SMITHFIELD GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 112.0,
+        "rating": 66.3,
+        "par": 72
+      }
+    }
+  },
+  "SOMERSET EAST GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 113.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 69.7,
+        "par": 72
+      }
+    }
+  },
+  "SOMERSET WEST GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 70.6,
+        "par": 72
+      }
+    }
+  },
+  "SOUTHBROOM GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 67.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 69.8,
+        "par": 72
+      }
+    }
+  },
+  "SOUTHDOWNS COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 127.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "SOUTPANSBERG GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "SOWETO COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 64.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 74.9,
+        "par": 72
+      }
+    }
+  },
+  "SPRINGBOK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 114.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.0,
+        "par": 72
+      }
+    }
+  },
+  "SPRINGS COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 119.0,
+        "rating": 70.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 72.1,
+        "par": 72
+      }
+    }
+  },
+  "ST CATHRYNS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 70.2,
+        "par": 72
+      }
+    }
+  },
+  "ST FRANCIS BAY GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.2,
+        "par": 71
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 67.5,
+        "par": 71
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 71.3,
+        "par": 71
+      }
+    }
+  },
+  "ST FRANCIS LINKS GOLF COURSE": {
+    "tees": {
+      "Blue": {
+        "slope": 126.0,
+        "rating": 70.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 111.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 141.0,
+        "rating": 73.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 148.0,
+        "rating": 76.4,
+        "par": 72
+      }
+    }
+  },
+  "STANDERTON GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.8,
+        "par": 72
+      }
+    }
+  },
+  "STATE MINES COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 128.0,
+        "rating": 72.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 73.9,
+        "par": 72
+      }
+    }
+  },
+  "STEENBERG GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 69.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 67.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 127.0,
+        "rating": 72.8,
+        "par": 72
+      }
+    }
+  },
+  "STELLENBOSCH GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 68.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 71.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 73.4,
+        "par": 72
+      }
+    }
+  },
+  "Steyn City GC": {
+    "tees": {
+      "Black": {
+        "slope": 153.0,
+        "rating": 76.3,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 138.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 128.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 149.0,
+        "rating": 73.7,
+        "par": 72
+      }
+    }
+  },
+  "STILBAAI GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 110.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 122.0,
+        "rating": 70.2,
+        "par": 72
+      }
+    }
+  },
+  "STRAND GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 110.0,
+        "rating": 67.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 123.0,
+        "rating": 72.0,
+        "par": 72
+      }
+    }
+  },
+  "STUTTERHEIM COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Front": {
+        "slope": 115.0,
+        "rating": 67.0,
+        "par": 72
+      }
+    }
+  },
+  "Sun Valley": {
+    "tees": {
+      "Red": {
+        "slope": 100.0,
+        "rating": 55.8,
+        "par": 58
+      },
+      "Yellow": {
+        "slope": 107.0,
+        "rating": 58.0,
+        "par": 58
+      }
+    }
+  },
+  "SWARTKLIP GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 73.6,
+        "par": 72
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 66.5,
+        "par": 72
+      }
+    }
+  },
+  "SWELLENDAM GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 112.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 124.0,
+        "rating": 71.0,
+        "par": 72
+      }
+    }
+  },
+  "TEMPE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.3,
+        "par": 70
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 65.7,
+        "par": 70
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.3,
+        "par": 70
+      }
+    }
+  },
+  "Test Course": {
+    "tees": {
+      "Red": {
+        "slope": 135.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "THABAZIMBI GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Red": {
+        "slope": 116.0,
+        "rating": 66.7,
+        "par": 72
+      }
+    }
+  },
+  "THE BELMONT GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 130.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 127.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White": {
+        "slope": 138.0,
+        "rating": 71.0,
+        "par": 72
+      }
+    }
+  },
+  "THE BRYANSTON COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 72.6,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 73.8,
+        "par": 72
+      }
+    }
+  },
+  "THE ELS CLUB - COPPERLEAF": {
+    "tees": {
+      "Black": {
+        "slope": 145.0,
+        "rating": 77.5,
+        "par": 72
+      },
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 105.0,
+        "rating": 65.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 73.6,
+        "par": 72
+      }
+    }
+  },
+  "THE KILLARNEY COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 68.8,
+        "par": 70
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.3,
+        "par": 70
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.2,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 72.8,
+        "par": 70
+      }
+    }
+  },
+  "THE LAKES AT MOUNT EDGECOMBE CC": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 110.0,
+        "rating": 66.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "THE LINKS FANCOURT": {
+    "tees": {
+      "Black": {
+        "slope": 149.0,
+        "rating": 77.8,
+        "par": 73
+      },
+      "Blue": {
+        "slope": 132.0,
+        "rating": 70.0,
+        "par": 73
+      },
+      "Red": {
+        "slope": 123.0,
+        "rating": 67.7,
+        "par": 73
+      },
+      "White": {
+        "slope": 137.0,
+        "rating": 70.9,
+        "par": 73
+      },
+      "Yellow": {
+        "slope": 141.0,
+        "rating": 74.1,
+        "par": 73
+      }
+    }
+  },
+  "THE RIVER CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 130.0,
+        "rating": 68.6,
+        "par": 71
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 65.6,
+        "par": 71
+      },
+      "White": {
+        "slope": 135.0,
+        "rating": 71.2,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 139.0,
+        "rating": 72.9,
+        "par": 71
+      }
+    }
+  },
+  "THE WANDERERS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 68.6,
+        "par": 71
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 66.5,
+        "par": 71
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.1,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 73.1,
+        "par": 71
+      }
+    }
+  },
+  "THE WOODS AT MOUNT EDGECOMBE C": {
+    "tees": {
+      "Blue": {
+        "slope": 118.0,
+        "rating": 67.8,
+        "par": 70
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.4,
+        "par": 70
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 69.8,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 71.1,
+        "par": 70
+      }
+    }
+  },
+  "THEEWATERSKLOOF GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 66.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 119.0,
+        "rating": 70.6,
+        "par": 72
+      }
+    }
+  },
+  "THEUNISSEN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 125.0,
+        "rating": 73.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 67.3,
+        "par": 72
+      }
+    }
+  },
+  "TZANEEN COUNTRY CLUB": {
+    "tees": {
+      "Green": {
+        "slope": 120.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "Purple": {
+        "slope": 132.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "UITENHAGE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 117.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "ULCO GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 123.0,
+        "rating": 70.8,
+        "par": 72
+      },
+      "Front": {
+        "slope": 109.0,
+        "rating": 65.6,
+        "par": 72
+      }
+    }
+  },
+  "UMDONI PARK GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 95.0,
+        "rating": 62.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 133.0,
+        "rating": 70.3,
+        "par": 72
+      }
+    }
+  },
+  "UMFOLOZI COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 71.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 111.0,
+        "rating": 66.5,
+        "par": 72
+      }
+    }
+  },
+  "UMHLALI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 69.1,
+        "par": 71
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.4,
+        "par": 71
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.0,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 129.0,
+        "rating": 72.5,
+        "par": 71
+      }
+    }
+  },
+  "UMKOMAAS GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 113.0,
+        "rating": 66.8,
+        "par": 70
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 66.2,
+        "par": 70
+      },
+      "White": {
+        "slope": 124.0,
+        "rating": 69.0,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 125.0,
+        "rating": 69.8,
+        "par": 70
+      }
+    }
+  },
+  "UMTATA COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 69.3,
+        "par": 72
+      },
+      "Front": {
+        "slope": 116.0,
+        "rating": 65.5,
+        "par": 72
+      }
+    }
+  },
+  "UNDERBERG COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "Red": {
+        "slope": 115.0,
+        "rating": 65.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "UNIONDALE GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 114.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 112.0,
+        "rating": 65.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 69.8,
+        "par": 72
+      }
+    }
+  },
+  "UNIVERSITY OF LIMPOPO": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 65.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 125.0,
+        "rating": 70.1,
+        "par": 72
+      }
+    }
+  },
+  "UPINGTON GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 108.0,
+        "rating": 65.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 121.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "Utrecht Golf Club": {
+    "tees": {
+      "Back": {
+        "slope": 129.0,
+        "rating": 71.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 116.0,
+        "rating": 66.1,
+        "par": 72
+      }
+    }
+  },
+  "VAAL DE GRACE GOLF ESTATE": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Green": {
+        "slope": 110.0,
+        "rating": 64.9,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 68.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 134.0,
+        "rating": 73.8,
+        "par": 72
+      }
+    }
+  },
+  "VENTERSDORP GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 131.0,
+        "rating": 70.0,
+        "par": 71
+      },
+      "Front": {
+        "slope": 117.0,
+        "rating": 64.7,
+        "par": 71
+      }
+    }
+  },
+  "VICTORIA COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 67.9,
+        "par": 71
+      },
+      "Green": {
+        "slope": 114.0,
+        "rating": 64.8,
+        "par": 71
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.7,
+        "par": 71
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 70.4,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 132.0,
+        "rating": 72.2,
+        "par": 71
+      }
+    }
+  },
+  "VICTORIA-WES GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 120.0,
+        "rating": 70.6,
+        "par": 72
+      },
+      "Front": {
+        "slope": 108.0,
+        "rating": 66.0,
+        "par": 72
+      }
+    }
+  },
+  "VILJOENSKROON COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 122.0,
+        "rating": 71.4,
+        "par": 72
+      },
+      "Front": {
+        "slope": 117.0,
+        "rating": 69.3,
+        "par": 72
+      }
+    }
+  },
+  "VOLKSRUST GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 120.0,
+        "rating": 68.1,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 72.8,
+        "par": 72
+      }
+    }
+  },
+  "VREDE GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 126.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 66.6,
+        "par": 72
+      }
+    }
+  },
+  "VREDENBURG GOLF CLUB": {
+    "tees": {
+      "Championship": {
+        "slope": 132.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Club": {
+        "slope": 128.0,
+        "rating": 70.2,
+        "par": 72
+      },
+      "Front": {
+        "slope": 119.0,
+        "rating": 65.8,
+        "par": 72
+      }
+    }
+  },
+  "VREDENDAL GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 132.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 123.0,
+        "rating": 65.8,
+        "par": 72
+      }
+    }
+  },
+  "VRYBURG GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 120.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "VRYHEID GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Red": {
+        "slope": 120.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 138.0,
+        "rating": 73.6,
+        "par": 72
+      }
+    }
+  },
+  "VULINTABA COUNTRY ESTATE": {
+    "tees": {
+      "Blue": {
+        "slope": 123.0,
+        "rating": 68.5,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 66.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 134.0,
+        "rating": 74.2,
+        "par": 72
+      }
+    }
+  },
+  "WALKER PARK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 116.0,
+        "rating": 67.3,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 71.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 73.5,
+        "par": 72
+      }
+    }
+  },
+  "WALMER COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 121.0,
+        "rating": 69.2,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 71.4,
+        "par": 72
+      }
+    }
+  },
+  "WALMER GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 113.0,
+        "rating": 68.3,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 121.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "WATERKLOOF GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 71.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 121.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 131.0,
+        "rating": 74.5,
+        "par": 72
+      }
+    }
+  },
+  "WATERPAN GOLF CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 115.0,
+        "rating": 66.8,
+        "par": 73
+      },
+      "Yellow": {
+        "slope": 128.0,
+        "rating": 73.1,
+        "par": 73
+      }
+    }
+  },
+  "Wedgewood Golf Club": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 69.0,
+        "par": 72
+      },
+      "Red": {
+        "slope": 106.0,
+        "rating": 64.7,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.7,
+        "par": 72
+      }
+    }
+  },
+  "WELLINGTON GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 65.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 117.0,
+        "rating": 70.3,
+        "par": 72
+      }
+    }
+  },
+  "WESSELSBRON GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 118.0,
+        "rating": 68.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 72.6,
+        "par": 72
+      }
+    }
+  },
+  "WEST BANK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 123.0,
+        "rating": 69.6,
+        "par": 72
+      }
+    }
+  },
+  "WESTLAKE GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 114.0,
+        "rating": 66.9,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 123.0,
+        "rating": 71.2,
+        "par": 72
+      }
+    }
+  },
+  "WESTMINSTER GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 111.0,
+        "rating": 68.7,
+        "par": 70
+      },
+      "Front": {
+        "slope": 105.0,
+        "rating": 65.9,
+        "par": 70
+      }
+    }
+  },
+  "WHITE RIVER COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 122.0,
+        "rating": 68.9,
+        "par": 71
+      },
+      "Red": {
+        "slope": 114.0,
+        "rating": 65.6,
+        "par": 71
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 71.0,
+        "par": 71
+      }
+    }
+  },
+  "WHITES GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 70.9,
+        "par": 72
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 66.8,
+        "par": 72
+      }
+    }
+  },
+  "WILD COAST SUN": {
+    "tees": {
+      "Blue": {
+        "slope": 116.0,
+        "rating": 66.3,
+        "par": 70
+      },
+      "Red": {
+        "slope": 113.0,
+        "rating": 64.5,
+        "par": 70
+      },
+      "White": {
+        "slope": 125.0,
+        "rating": 68.5,
+        "par": 70
+      },
+      "Yellow": {
+        "slope": 133.0,
+        "rating": 71.0,
+        "par": 70
+      }
+    }
+  },
+  "WILLISTON GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 114.0,
+        "rating": 68.7,
+        "par": 72
+      },
+      "Front": {
+        "slope": 104.0,
+        "rating": 64.0,
+        "par": 72
+      }
+    }
+  },
+  "WILLOWMORE GOLF CLUB": {
+    "tees": {
+      "White": {
+        "slope": 109.0,
+        "rating": 65.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 113.0,
+        "rating": 69.9,
+        "par": 72
+      }
+    }
+  },
+  "WINDSOR PARK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "Windsor Park Golf Course": {
+    "tees": {
+      "Red": {
+        "slope": 121.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 127.0,
+        "rating": 70.5,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 71.9,
+        "par": 72
+      }
+    }
+  },
+  "WINELANDS COURSE (10-27)": {
+    "tees": {
+      "Blue Winelands": {
+        "slope": 122.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Red Winelands": {
+        "slope": 113.0,
+        "rating": 66.4,
+        "par": 72
+      },
+      "White Winelands": {
+        "slope": 126.0,
+        "rating": 71.7,
+        "par": 72
+      },
+      "Yellow Wineland s": {
+        "slope": 127.0,
+        "rating": 72.2,
+        "par": 72
+      }
+    }
+  },
+  "WINGATE PARK COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 69.7,
+        "par": 72
+      },
+      "Green": {
+        "slope": 132.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Red": {
+        "slope": 130.0,
+        "rating": 68.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 74.7,
+        "par": 72
+      }
+    }
+  },
+  "WITBANK GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 119.0,
+        "rating": 67.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 126.0,
+        "rating": 70.9,
+        "par": 72
+      }
+    }
+  },
+  "WOLMARANSSTAD GOLF CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 113.0,
+        "rating": 69.5,
+        "par": 72
+      },
+      "Front": {
+        "slope": 104.0,
+        "rating": 65.1,
+        "par": 72
+      }
+    }
+  },
+  "WOODHILL COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 133.0,
+        "rating": 71.1,
+        "par": 72
+      },
+      "Red": {
+        "slope": 118.0,
+        "rating": 68.0,
+        "par": 72
+      },
+      "White": {
+        "slope": 136.0,
+        "rating": 72.4,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 135.0,
+        "rating": 74.6,
+        "par": 72
+      }
+    }
+  },
+  "WORCESTER GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 111.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 120.0,
+        "rating": 70.0,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 126.0,
+        "rating": 72.5,
+        "par": 72
+      }
+    }
+  },
+  "XAMARIN COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 124.0,
+        "rating": 68.0,
+        "par": 68
+      },
+      "Front": {
+        "slope": 113.0,
+        "rating": 63.0,
+        "par": 68
+      }
+    }
+  },
+  "ZASTRON GOLF CLUB": {
+    "tees": {
+      "Red": {
+        "slope": 117.0,
+        "rating": 64.6,
+        "par": 72
+      },
+      "White": {
+        "slope": 130.0,
+        "rating": 70.8,
+        "par": 72
+      }
+    }
+  },
+  "ZEBULA COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 128.0,
+        "rating": 70.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 119.0,
+        "rating": 66.8,
+        "par": 72
+      },
+      "White": {
+        "slope": 131.0,
+        "rating": 72.8,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 134.0,
+        "rating": 74.9,
+        "par": 72
+      }
+    }
+  },
+  "ZEERUST COUNTRY CLUB": {
+    "tees": {
+      "Back": {
+        "slope": 120.0,
+        "rating": 67.5,
+        "par": 70
+      },
+      "Front": {
+        "slope": 109.0,
+        "rating": 63.5,
+        "par": 70
+      }
+    }
+  },
+  "ZIMBALI COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 129.0,
+        "rating": 69.4,
+        "par": 72
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 67.5,
+        "par": 72
+      },
+      "White": {
+        "slope": 129.0,
+        "rating": 72.2,
+        "par": 72
+      },
+      "Yellow": {
+        "slope": 130.0,
+        "rating": 75.0,
+        "par": 72
+      }
+    }
+  },
+  "Zwartenbosch": {
+    "tees": {
+      "Red": {
+        "slope": 122.0,
+        "rating": 67.7,
+        "par": 72
+      },
+      "White": {
+        "slope": 132.0,
+        "rating": 72.3,
+        "par": 72
+      }
+    }
+  },
+  "ZWARTKOP COUNTRY CLUB": {
+    "tees": {
+      "Blue": {
+        "slope": 124.0,
+        "rating": 68.1,
+        "par": 71
+      },
+      "Red": {
+        "slope": 117.0,
+        "rating": 66.0,
+        "par": 71
+      },
+      "White": {
+        "slope": 134.0,
+        "rating": 70.9,
+        "par": 71
+      },
+      "Yellow": {
+        "slope": 137.0,
+        "rating": 72.6,
+        "par": 71
+      }
+    }
+  }
+}

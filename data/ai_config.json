@@ -1,0 +1,13 @@
+{
+  "zero_cost_mode": true,
+  "parser_fallback_enabled": true,
+  "low_confidence_threshold": 0.6,
+  "min_regression_pass_rate": 0.85,
+  "fast_model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "smart_model_id": "meta-llama/Llama-3.1-70B-Instruct",
+  "high_accuracy_actions": [
+    "compare_players",
+    "compare_trends",
+    "predict_next"
+  ]
+}
