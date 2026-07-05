@@ -6,14 +6,26 @@
 
 import io
 import os
+import re
+import json
+import hashlib
+from datetime import datetime
 import streamlit as st
 import pandas as pd
+import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+from PIL import ImageOps
+from openpyxl import load_workbook
 
 from backend.goam_loader import GOAMLoader
 from backend.goam_rounds import GOAMRounds
 from backend.goam_calculator import GOAMCalculator
 from utils.json_utils import load_json, save_json
+
+try:
+    from rapidocr_onnxruntime import RapidOCR
+except Exception:
+    RapidOCR = None
 
 
 # ---------------------------------------------------------
@@ -76,6 +88,326 @@ def _load_font(size, bold=False):
             continue
 
     return ImageFont.load_default()
+
+
+def _month_key_to_mmyyyy(month_key: str) -> str:
+    raw = str(month_key or "").strip().replace("’", "'")
+    if not raw:
+        return datetime.now().strftime("%m%Y")
+
+    for fmt in ("%b'%y", "%b %Y", "%B %Y", "%Y-%m", "%Y/%m"):
+        try:
+            dt = datetime.strptime(raw, fmt)
+            return dt.strftime("%m%Y")
+        except Exception:
+            continue
+
+    return datetime.now().strftime("%m%Y")
+
+
+def _sanitize_filename_part(value: str) -> str:
+    text = str(value or "").strip()
+    text = re.sub(r"[^A-Za-z0-9]+", "-", text)
+    text = re.sub(r"-+", "-", text).strip("-")
+    return text or "Unknown"
+
+
+def _canonicalize_players_for_fingerprint(players: list[dict]) -> list[dict]:
+    canonical = []
+    for p in players:
+        canonical.append(
+            {
+                "name": str(p.get("name", "")).strip().lower(),
+                "strokes": _to_int_or_none(p.get("strokes")),
+                "ips": _to_int_or_none(p.get("ips")),
+                "team": str(p.get("team", "")).strip().lower(),
+            }
+        )
+    canonical.sort(key=lambda x: (x["name"], x["strokes"] if x["strokes"] is not None else -1))
+    return canonical
+
+
+def _scorecard_fingerprint(course_name: str, month_key: str, players: list[dict]) -> str:
+    payload = {
+        "course": str(course_name or "").strip().lower(),
+        "month_key": str(month_key or "").strip().lower(),
+        "players": _canonicalize_players_for_fingerprint(players),
+    }
+    raw = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+
+def _load_processed_scorecards_registry():
+    data = load_json("data/processed_scorecards.json")
+    if isinstance(data, dict) and isinstance(data.get("items"), list):
+        return data
+    return {"items": []}
+
+
+def _find_duplicate_scorecard(registry: dict, fingerprint: str, image_hash: str | None):
+    for item in registry.get("items", []):
+        if item.get("fingerprint") == fingerprint:
+            return "scorecard content", item
+        if image_hash and item.get("image_hash") == image_hash:
+            return "image", item
+    return None, None
+
+
+def _register_processed_scorecard(registry: dict, fingerprint: str, image_hash: str | None, month_key: str, course_name: str):
+    item = {
+        "fingerprint": fingerprint,
+        "image_hash": image_hash,
+        "month_key": str(month_key or "").strip(),
+        "course": str(course_name or "").strip(),
+        "created_at": datetime.utcnow().isoformat() + "Z",
+    }
+    registry.setdefault("items", []).append(item)
+    save_json("data/processed_scorecards.json", registry)
+
+
+def _build_course_score_from_template(course_name: str, month_key: str, player_rows: list[dict]):
+    template_path = os.path.join("data", "Course-Score-Template.xlsx")
+    if not os.path.exists(template_path):
+        return None, "Course score template not found: data/Course-Score-Template.xlsx"
+
+    wb = load_workbook(template_path)
+    ws = wb.active
+
+    headers = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+    header_map = {
+        str(h).strip().lower(): idx + 1
+        for idx, h in enumerate(headers)
+        if h is not None and str(h).strip() != ""
+    }
+
+    name_col = header_map.get("name", 1)
+    strokes_col = header_map.get("strokes")
+    ips_col = header_map.get("ips")
+    team_col = header_map.get("liv")
+
+    if strokes_col is None or ips_col is None:
+        return None, "Template must include Name, Strokes, and IPS columns in row 1."
+
+    template_row_by_name = {}
+    for r in range(2, ws.max_row + 1):
+        name = str(ws.cell(r, name_col).value or "").strip()
+        if name:
+            template_row_by_name[name.lower()] = r
+
+    next_row = ws.max_row + 1
+    for row in player_rows:
+        name = str(row.get("name", "")).strip()
+        if not name:
+            continue
+
+        r = template_row_by_name.get(name.lower())
+        if r is None:
+            r = next_row
+            next_row += 1
+            ws.cell(r, name_col).value = name
+
+        ws.cell(r, strokes_col).value = _to_int_or_none(row.get("strokes"))
+        ws.cell(r, ips_col).value = _to_int_or_none(row.get("ips"))
+        if team_col is not None:
+            ws.cell(r, team_col).value = str(row.get("team", "")).strip()
+
+    safe_course = _sanitize_filename_part(course_name)
+    mmYYYY = _month_key_to_mmyyyy(month_key)
+    out_name = f"Course-Score-{safe_course}-{mmYYYY}.xlsx"
+    out_path = os.path.join("data", out_name)
+    wb.save(out_path)
+    return out_path, None
+
+
+def _extract_ocr_lines(uploaded_image: Image.Image):
+    lines = []
+    debug_text = []
+
+    # Preferred OCR backend: RapidOCR (fully local, no external tesseract binary required).
+    if RapidOCR is not None:
+        engine = RapidOCR()
+
+        candidates = [
+            uploaded_image.convert("RGB"),
+            ImageOps.autocontrast(uploaded_image.convert("L")).convert("RGB"),
+        ]
+
+        for idx, candidate in enumerate(candidates, start=1):
+            arr = np.array(candidate)
+            result, _ = engine(arr)
+            candidate_lines = []
+
+            if isinstance(result, list):
+                for item in result:
+                    if not isinstance(item, (list, tuple)) or len(item) < 2:
+                        continue
+                    text = str(item[1]).strip()
+                    if text:
+                        candidate_lines.append(text)
+
+            debug_text.append(f"Pass {idx}: {len(candidate_lines)} OCR lines")
+            if len(candidate_lines) > len(lines):
+                lines = candidate_lines
+
+    return lines, "\n".join(debug_text)
+
+
+def _parse_ocr_scorecard_lines(lines):
+    parsed = []
+    seen_names = set()
+
+    for raw in lines:
+        line = re.sub(r"\s+", " ", str(raw or "")).strip()
+        if not line:
+            continue
+
+        nums = list(re.finditer(r"\d+", line))
+        if len(nums) < 2:
+            continue
+
+        # Assume the last two numbers are Strokes and IPS.
+        strokes_match = nums[-2]
+        ips_match = nums[-1]
+
+        try:
+            strokes = int(strokes_match.group())
+            ips = int(ips_match.group())
+        except Exception:
+            continue
+
+        if not (40 <= strokes <= 160 and 0 <= ips <= 60):
+            continue
+
+        name_part = line[:strokes_match.start()].strip(" -|:;,.\t")
+        name_part = re.sub(r"[^A-Za-z '\-]", "", name_part).strip()
+        if len(name_part) < 3:
+            continue
+
+        # Title-case improves readability while still editable by the user.
+        name = " ".join(token.capitalize() for token in name_part.split())
+        name_key = name.lower()
+        if name_key in seen_names:
+            continue
+        seen_names.add(name_key)
+
+        parsed.append(
+            {
+                "Name": name,
+                "Strokes": strokes,
+                "IPS": ips,
+                "LIV": "",
+                "OCR Line": line,
+            }
+        )
+
+    parsed = sorted(parsed, key=lambda r: int(r.get("IPS", 0)), reverse=True)
+    return pd.DataFrame(parsed)
+
+
+def _clean_ocr_name(text):
+    value = re.sub(r"\s+", " ", str(text or "")).strip()
+    value = re.sub(r"\b(sap\s*id|name|marker\s*[a-d])\b", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"[^A-Za-z '\-]", "", value).strip(" -|:;,.\t")
+    if len(value) < 3:
+        return ""
+    return " ".join(token.capitalize() for token in value.split())
+
+
+def _parse_scorecard_layout_a_to_d(lines):
+    slots = {"A": "", "B": "", "C": "", "D": ""}
+
+    # Extract player names from "Player A/B/C/D" style lines.
+    player_patterns = [
+        r"\bplayer\s*([abcd])\b[:\-\s]*(.+)$",
+        r"\bplay\s*([abcd])\b[:\-\s]*(.+)$",
+    ]
+
+    for raw in lines:
+        line = re.sub(r"\s+", " ", str(raw or "")).strip()
+        lower = line.lower()
+        for pat in player_patterns:
+            m = re.search(pat, lower, flags=re.IGNORECASE)
+            if not m:
+                continue
+            slot = m.group(1).upper()
+
+            # Use original line tail (preserves letter case for names).
+            split_idx = line.lower().find(m.group(1).lower())
+            tail = line[split_idx + 1 :] if split_idx >= 0 else line
+            tail = re.sub(r"^[\s:\-]+", "", tail)
+            name = _clean_ocr_name(tail)
+            if name and not slots[slot]:
+                slots[slot] = name
+
+    # Parse the total row where score/result pairs are typically written.
+    total_line = ""
+    total_numbers = []
+    for raw in lines:
+        line = re.sub(r"\s+", " ", str(raw or "")).strip()
+        if "total" not in line.lower():
+            continue
+        nums = [int(x) for x in re.findall(r"\d+", line)]
+        if len(nums) > len(total_numbers):
+            total_numbers = nums
+            total_line = line
+
+    if not any(slots.values()) or len(total_numbers) < 4:
+        return pd.DataFrame()
+
+    values = total_numbers[:]
+    if values and values[0] in {36, 72}:
+        values = values[1:]
+
+    rows = []
+    ordered_slots = ["A", "B", "C", "D"]
+    if len(values) >= 8:
+        # Assume score/result pairs for each player.
+        for i, slot in enumerate(ordered_slots):
+            name = slots.get(slot, "")
+            if not name:
+                continue
+            strokes = int(values[i * 2])
+            ips = int(values[i * 2 + 1])
+            if not (40 <= strokes <= 160 and 0 <= ips <= 60):
+                continue
+            rows.append(
+                {
+                    "Name": name,
+                    "Strokes": strokes,
+                    "IPS": ips,
+                    "LIV": "",
+                    "OCR Line": total_line,
+                }
+            )
+    else:
+        # Fallback: use first four numbers as strokes only; leave IPS empty for manual edit.
+        for i, slot in enumerate(ordered_slots):
+            if i >= len(values):
+                break
+            name = slots.get(slot, "")
+            if not name:
+                continue
+            strokes = int(values[i])
+            if not (40 <= strokes <= 160):
+                continue
+            rows.append(
+                {
+                    "Name": name,
+                    "Strokes": strokes,
+                    "IPS": "",
+                    "LIV": "",
+                    "OCR Line": total_line,
+                }
+            )
+
+    out = pd.DataFrame(rows)
+    if not out.empty and "IPS" in out.columns:
+        try:
+            numeric_ips = pd.to_numeric(out["IPS"], errors="coerce")
+            out = out.assign(_ips_sort=numeric_ips.fillna(-1)).sort_values("_ips_sort", ascending=False).drop(columns=["_ips_sort"])
+        except Exception:
+            pass
+    return out
 
 
 def _compute_nett(player):
@@ -720,9 +1052,20 @@ def show_scorecards():
                             "scorecard": records,
                         },
                     )
+
+                    course_score_path, course_score_error = _build_course_score_from_template(
+                        course_name=course_name_clean,
+                        month_key=month_key_clean,
+                        player_rows=players,
+                    )
+
                     st.success(
                         f"Published generated scorecard to data/goam_scores.json under {month_key_clean}."
                     )
+                    if course_score_error:
+                        st.warning(course_score_error)
+                    elif course_score_path:
+                        st.success(f"Created course score file: {course_score_path}")
                     st.rerun()
     else:
         st.info("No generated scorecard found yet. Create one in 4-Ball Generation first.")
@@ -781,6 +1124,181 @@ def show_scorecards():
         )
 
 
+def show_scorecard_ocr_reader():
+    st.header("📷 Scorecard OCR Reader")
+    st.caption("Upload a physical scorecard image, extract rows with OCR, review them, and publish to GOAM scores.")
+
+    uploaded = st.file_uploader(
+        "Upload scorecard image",
+        type=["png", "jpg", "jpeg", "webp"],
+        key="scorecard_ocr_upload",
+    )
+
+    if uploaded is None:
+        st.info("Upload a scorecard image to begin OCR extraction.")
+        return
+
+    try:
+        image = Image.open(uploaded).convert("RGB")
+        image_bytes = uploaded.getvalue()
+        image_hash = hashlib.sha256(image_bytes).hexdigest()
+        st.session_state["ocr_uploaded_image_hash"] = image_hash
+    except Exception as e:
+        st.error(f"Could not read image: {e}")
+        return
+
+    st.image(image, caption="Uploaded scorecard", use_container_width=True)
+
+    if RapidOCR is None:
+        st.warning(
+            "OCR engine is not available. Install dependency 'rapidocr-onnxruntime' to enable extraction."
+        )
+        return
+
+    if st.button("Run OCR Extraction", use_container_width=True, key="run_scorecard_ocr"):
+        lines, debug_text = _extract_ocr_lines(image)
+        parsed_df = _parse_ocr_scorecard_lines(lines)
+        layout_df = _parse_scorecard_layout_a_to_d(lines)
+
+        if parsed_df.empty and not layout_df.empty:
+            parsed_df = layout_df
+        elif not parsed_df.empty and not layout_df.empty:
+            merged = pd.concat([parsed_df, layout_df], ignore_index=True)
+            merged = merged.drop_duplicates(subset=["Name"], keep="first")
+            parsed_df = merged
+
+        st.session_state["ocr_scorecard_lines"] = lines
+        st.session_state["ocr_scorecard_debug"] = debug_text
+        st.session_state["ocr_scorecard_df"] = parsed_df
+
+    debug_text = st.session_state.get("ocr_scorecard_debug", "")
+    if debug_text:
+        st.caption(debug_text)
+
+    lines = st.session_state.get("ocr_scorecard_lines", [])
+    if lines:
+        with st.expander("Raw OCR text", expanded=False):
+            st.text("\n".join(lines))
+
+    parsed_df = st.session_state.get("ocr_scorecard_df")
+    if parsed_df is None:
+        st.info("Click 'Run OCR Extraction' to parse players, strokes, and IPS.")
+        return
+
+    if parsed_df.empty:
+        st.warning("OCR ran, but no valid score rows were detected. Try a clearer photo or edit manually after extraction.")
+        return
+
+    st.subheader("Review parsed rows")
+    editable_df = st.data_editor(
+        parsed_df,
+        hide_index=True,
+        use_container_width=True,
+        num_rows="dynamic",
+        key="ocr_scorecard_editor",
+    )
+
+    col1, col2 = st.columns(2)
+    with col1:
+        month_key = st.text_input("Month key", value="", help="Example: Jul'26", key="ocr_month_key")
+    with col2:
+        course_name = st.text_input("Course name", value="", key="ocr_course_name")
+
+    overwrite = st.checkbox("Overwrite existing month if it already exists", value=False, key="ocr_overwrite_month")
+
+    if st.button("Publish OCR scorecard to GOAM scores", use_container_width=True, key="publish_ocr_scorecard"):
+        month_key_clean = str(month_key).strip()
+        course_name_clean = str(course_name).strip()
+
+        if not month_key_clean:
+            st.error("Month key is required.")
+            return
+        if not course_name_clean:
+            st.error("Course name is required.")
+            return
+
+        goam_scores = load_json("data/goam_scores.json")
+        if not isinstance(goam_scores, dict):
+            goam_scores = {}
+
+        if month_key_clean in goam_scores and not overwrite:
+            st.error("Month already exists in GOAM scores. Enable overwrite to replace it.")
+            return
+
+        rows = editable_df.fillna("").to_dict(orient="records")
+        players = []
+        invalid_rows = []
+
+        for idx, row in enumerate(rows, 1):
+            name = str(row.get("Name", "")).strip()
+            if not name:
+                continue
+
+            strokes = _to_int_or_none(row.get("Strokes"))
+            ips = _to_int_or_none(row.get("IPS"))
+            if strokes is None or ips is None:
+                invalid_rows.append(idx)
+                continue
+
+            players.append(
+                {
+                    "name": name,
+                    "strokes": strokes,
+                    "ips": ips,
+                    "team": str(row.get("LIV", "")).strip(),
+                }
+            )
+
+        if invalid_rows:
+            st.error(f"Invalid numeric rows found: {invalid_rows}. Fix them before publishing.")
+            return
+        if not players:
+            st.error("No valid player rows to publish.")
+            return
+
+        fingerprint = _scorecard_fingerprint(
+            course_name=course_name_clean,
+            month_key=month_key_clean,
+            players=players,
+        )
+        image_hash = st.session_state.get("ocr_uploaded_image_hash")
+        registry = _load_processed_scorecards_registry()
+        duplicate_kind, duplicate_item = _find_duplicate_scorecard(registry, fingerprint, image_hash)
+        if duplicate_kind:
+            st.error(
+                "Duplicate scorecard detected and skipped "
+                f"({duplicate_kind} already processed for "
+                f"{duplicate_item.get('course', '-')}, {duplicate_item.get('month_key', '-')})."
+            )
+            return
+
+        goam_scores[month_key_clean] = {
+            "course": course_name_clean,
+            "players": players,
+        }
+        save_json("data/goam_scores.json", goam_scores)
+
+        _register_processed_scorecard(
+            registry=registry,
+            fingerprint=fingerprint,
+            image_hash=image_hash,
+            month_key=month_key_clean,
+            course_name=course_name_clean,
+        )
+
+        course_score_path, course_score_error = _build_course_score_from_template(
+            course_name=course_name_clean,
+            month_key=month_key_clean,
+            player_rows=players,
+        )
+
+        st.success(f"Published OCR scorecard to data/goam_scores.json under {month_key_clean}.")
+        if course_score_error:
+            st.warning(course_score_error)
+        elif course_score_path:
+            st.success(f"Created course score file: {course_score_path}")
+
+
 # ---------------------------------------------------------
 # MAIN ENTRY POINT
 # ---------------------------------------------------------
@@ -793,6 +1311,9 @@ def run_scores_app(mode="leaderboards"):
 
     elif mode == "scoreboard_poster":
         show_scoreboard_poster()
+
+    elif mode == "scorecard_ocr":
+        show_scorecard_ocr_reader()
 
     else:
         st.error("Invalid mode for run_scores_app()")

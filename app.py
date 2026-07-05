@@ -260,7 +260,7 @@ role = st.session_state.get("role", "member")
 page = st.session_state.get("page", "profile")
 
 # Determine which expander should be open based on current page
-_scores_open   = page in ["scores_leaderboards", "scores_cards", "scores_poster"]
+_scores_open   = page in ["scores_leaderboards", "scores_cards", "scores_poster", "scores_ocr"]
 _handicap_open = page in ["handicap"]
 _pairings_open = page in ["pairings_matrix", "pairings_gen"]
 _admin_open    = page in ["admin_users", "admin_data", "admin_user_data"]
@@ -274,6 +274,8 @@ with st.sidebar.expander("📘 Scores", expanded=_scores_open):
         st.session_state.page = "scores_cards"
     if st.button("Poster Scoreboard"):
         st.session_state.page = "scores_poster"
+    if st.button("Scorecard OCR Reader"):
+        st.session_state.page = "scores_ocr"
 
 # HANDICAP GROUP
 with st.sidebar.expander("🏌️ Handicap", expanded=_handicap_open):
@@ -350,6 +352,8 @@ elif page == "scores_cards":
     run_scores_app("scorecards")
 elif page == "scores_poster":
     run_scores_app("scoreboard_poster")
+elif page == "scores_ocr":
+    run_scores_app("scorecard_ocr")
 elif page == "handicap":
     # NEW: No sidebar login — login handled inside handicap_app.py
     st.session_state.course_df = load_course_data()
