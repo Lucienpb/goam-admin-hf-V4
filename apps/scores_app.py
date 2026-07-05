@@ -1156,20 +1156,47 @@ def show_scorecard_ocr_reader():
         return
 
     if st.button("Run OCR Extraction", use_container_width=True, key="run_scorecard_ocr"):
-        lines, debug_text = _extract_ocr_lines(image)
-        parsed_df = _parse_ocr_scorecard_lines(lines)
-        layout_df = _parse_scorecard_layout_a_to_d(lines)
+        with st.spinner("Running OCR extraction..."):
+            try:
+                lines, debug_text = _extract_ocr_lines(image)
+                parsed_df = _parse_ocr_scorecard_lines(lines)
+                layout_df = _parse_scorecard_layout_a_to_d(lines)
 
-        if parsed_df.empty and not layout_df.empty:
-            parsed_df = layout_df
-        elif not parsed_df.empty and not layout_df.empty:
-            merged = pd.concat([parsed_df, layout_df], ignore_index=True)
-            merged = merged.drop_duplicates(subset=["Name"], keep="first")
-            parsed_df = merged
+                if parsed_df.empty and not layout_df.empty:
+                    parsed_df = layout_df
+                elif not parsed_df.empty and not layout_df.empty:
+                    merged = pd.concat([parsed_df, layout_df], ignore_index=True)
+                    merged = merged.drop_duplicates(subset=["Name"], keep="first")
+                    parsed_df = merged
 
-        st.session_state["ocr_scorecard_lines"] = lines
-        st.session_state["ocr_scorecard_debug"] = debug_text
-        st.session_state["ocr_scorecard_df"] = parsed_df
+                st.session_state["ocr_scorecard_lines"] = lines
+                st.session_state["ocr_scorecard_debug"] = debug_text
+                st.session_state["ocr_scorecard_df"] = parsed_df
+                st.session_state["ocr_scorecard_last_run"] = {
+                    "line_count": len(lines),
+                    "row_count": 0 if parsed_df is None else int(len(parsed_df.index)),
+                }
+            except Exception as e:
+                st.session_state["ocr_scorecard_lines"] = []
+                st.session_state["ocr_scorecard_debug"] = f"OCR extraction failed: {e}"
+                st.session_state["ocr_scorecard_df"] = pd.DataFrame()
+                st.session_state["ocr_scorecard_last_run"] = {
+                    "line_count": 0,
+                    "row_count": 0,
+                }
+                st.error(f"OCR extraction failed: {e}")
+
+    last_run = st.session_state.get("ocr_scorecard_last_run")
+    if last_run:
+        line_count = int(last_run.get("line_count", 0))
+        row_count = int(last_run.get("row_count", 0))
+        if row_count > 0:
+            st.success(f"OCR complete: {line_count} text lines detected, {row_count} score rows parsed.")
+        else:
+            st.warning(
+                f"OCR complete: {line_count} text lines detected, but no valid score rows were parsed. "
+                "Use a clearer image or edit rows manually."
+            )
 
     debug_text = st.session_state.get("ocr_scorecard_debug", "")
     if debug_text:
