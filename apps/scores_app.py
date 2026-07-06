@@ -191,31 +191,79 @@ def _build_course_score_from_template(course_name: str, month_key: str, player_r
     ips_col = header_map.get("ips")
     team_col = header_map.get("liv")
 
-    if strokes_col is None or ips_col is None:
-        return None, "Template must include Name, Strokes, and IPS columns in row 1."
+    # Legacy support: flat template with Name/Strokes/IPS in row 1.
+    if strokes_col is not None and ips_col is not None:
+        template_row_by_name = {}
+        for r in range(2, ws.max_row + 1):
+            name = str(ws.cell(r, name_col).value or "").strip()
+            if name:
+                template_row_by_name[name.lower()] = r
 
-    template_row_by_name = {}
-    for r in range(2, ws.max_row + 1):
-        name = str(ws.cell(r, name_col).value or "").strip()
-        if name:
-            template_row_by_name[name.lower()] = r
+        next_row = ws.max_row + 1
+        for row in player_rows:
+            name = str(row.get("name", "")).strip()
+            if not name:
+                continue
 
-    next_row = ws.max_row + 1
-    for row in player_rows:
-        name = str(row.get("name", "")).strip()
-        if not name:
-            continue
+            r = template_row_by_name.get(name.lower())
+            if r is None:
+                r = next_row
+                next_row += 1
+                ws.cell(r, name_col).value = name
 
-        r = template_row_by_name.get(name.lower())
-        if r is None:
-            r = next_row
-            next_row += 1
-            ws.cell(r, name_col).value = name
+            ws.cell(r, strokes_col).value = _to_int_or_none(row.get("strokes"))
+            ws.cell(r, ips_col).value = _to_int_or_none(row.get("ips"))
+            if team_col is not None:
+                ws.cell(r, team_col).value = str(row.get("team", "")).strip()
+    else:
+        # GOAM course template layout: row 1 has hole labels and a "Total" score/result pair,
+        # with player rows starting at "Player 1" in column A.
+        player_start_row = None
+        for r in range(1, ws.max_row + 1):
+            label = str(ws.cell(r, 1).value or "").strip().lower()
+            if re.fullmatch(r"player\s*\d+", label):
+                player_start_row = r
+                break
 
-        ws.cell(r, strokes_col).value = _to_int_or_none(row.get("strokes"))
-        ws.cell(r, ips_col).value = _to_int_or_none(row.get("ips"))
-        if team_col is not None:
-            ws.cell(r, team_col).value = str(row.get("team", "")).strip()
+        if player_start_row is None:
+            return None, "Template format not recognized. Could not find player rows."
+
+        player_end_row = player_start_row
+        for r in range(player_start_row, ws.max_row + 1):
+            label = str(ws.cell(r, 1).value or "").strip().lower()
+            if re.fullmatch(r"player\s*\d+", label):
+                player_end_row = r
+            else:
+                break
+
+        total_score_col = None
+        for c in range(1, ws.max_column + 1):
+            top = str(ws.cell(1, c).value or "").strip().lower()
+            sub = str(ws.cell(4, c).value or "").strip().lower()
+            if top == "total" and sub.startswith("score"):
+                total_score_col = c
+                break
+
+        if total_score_col is None:
+            return None, "Template format not recognized. Could not find Total score column."
+
+        total_result_col = None
+        if total_score_col + 1 <= ws.max_column:
+            sub_next = str(ws.cell(4, total_score_col + 1).value or "").strip().lower()
+            if sub_next.startswith("result"):
+                total_result_col = total_score_col + 1
+
+        available_rows = max(0, player_end_row - player_start_row + 1)
+        for idx, row in enumerate(player_rows[:available_rows]):
+            name = str(row.get("name", "")).strip()
+            if not name:
+                continue
+
+            target_row = player_start_row + idx
+            ws.cell(target_row, 1).value = name
+            ws.cell(target_row, total_score_col).value = _to_int_or_none(row.get("strokes"))
+            if total_result_col is not None:
+                ws.cell(target_row, total_result_col).value = _to_int_or_none(row.get("ips"))
 
     safe_course = _sanitize_filename_part(course_name)
     mmYYYY = _month_key_to_mmyyyy(month_key)
@@ -1531,7 +1579,26 @@ def show_scorecard_ocr_reader():
         if course_score_error:
             st.warning(course_score_error)
         elif course_score_path:
+            st.session_state["ocr_latest_workbook_path"] = course_score_path
             st.success(f"Created course score file: {course_score_path}")
+
+    latest_workbook_path = str(st.session_state.get("ocr_latest_workbook_path", "")).strip()
+    if latest_workbook_path:
+        if os.path.exists(latest_workbook_path):
+            try:
+                with open(latest_workbook_path, "rb") as f:
+                    st.download_button(
+                        label="Download latest OCR workbook",
+                        data=f.read(),
+                        file_name=os.path.basename(latest_workbook_path),
+                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        use_container_width=True,
+                        key="download_latest_ocr_workbook",
+                    )
+            except Exception as e:
+                st.warning(f"Latest OCR workbook is set but could not be read: {e}")
+        else:
+            st.warning("Latest OCR workbook file was not found on disk. Publish again to regenerate it.")
 
 
 # ---------------------------------------------------------
