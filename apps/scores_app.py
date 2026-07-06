@@ -27,6 +27,12 @@ try:
 except Exception:
     RapidOCR = None
 
+try:
+    from scorecard_reader import parse_scorecard, _run_ocr_multi_pass
+except Exception:
+    parse_scorecard = None
+    _run_ocr_multi_pass = None
+
 
 # ---------------------------------------------------------
 # INTERNAL STATE
@@ -522,6 +528,48 @@ def _parse_scorecard_layout_a_to_d(lines):
         except Exception:
             pass
     return out
+
+
+def _standalone_output_to_df(standalone_output: dict) -> pd.DataFrame:
+    rows = []
+    source_line = str(standalone_output.get("totals_source_line", "") or "")
+    for player in standalone_output.get("players", []):
+        rows.append(
+            {
+                "Name": str(player.get("name", "") or "").strip(),
+                "Strokes": player.get("strokes"),
+                "IPS": player.get("ips"),
+                "LIV": str(player.get("liv", "") or "").strip(),
+                "OCR Line": source_line,
+            }
+        )
+
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+
+    # Keep only rows that still have at least one meaningful value.
+    keep_mask = []
+    for _, row in out.iterrows():
+        keep_mask.append(
+            bool(str(row.get("Name", "")).strip())
+            or _to_int_or_none(row.get("Strokes")) is not None
+            or _to_int_or_none(row.get("IPS")) is not None
+        )
+    out = out.loc[keep_mask].reset_index(drop=True)
+    return out
+
+
+def _run_standalone_reader_from_image(image: Image.Image):
+    if _run_ocr_multi_pass is None or parse_scorecard is None:
+        raise RuntimeError("Standalone scorecard reader module is not available.")
+
+    lines, debug_text = _run_ocr_multi_pass(image)
+    parsed = parse_scorecard(lines)
+    parsed_df = _standalone_output_to_df(parsed)
+    meta = parsed.get("meta") if isinstance(parsed, dict) else {}
+
+    return lines, debug_text, parsed_df, meta
 
 
 def _compute_nett(player):
@@ -1242,6 +1290,18 @@ def show_scorecard_ocr_reader():
     st.header("📷 Scorecard OCR Reader")
     st.caption("Upload a physical scorecard image, extract rows with OCR, review them, and publish to GOAM scores.")
 
+    engine_options = [
+        "Enhanced RapidOCR",
+        "Standalone Scorecard Reader",
+    ]
+    selected_engine = st.radio(
+        "Extraction engine",
+        options=engine_options,
+        horizontal=True,
+        key="ocr_engine_mode",
+        help="Standalone Scorecard Reader uses the standalone parser now integrated into this page.",
+    )
+
     uploaded = st.file_uploader(
         "Upload scorecard image",
         type=["png", "jpg", "jpeg", "webp"],
@@ -1269,22 +1329,44 @@ def show_scorecard_ocr_reader():
         )
         return
 
+    if selected_engine == "Standalone Scorecard Reader" and (_run_ocr_multi_pass is None or parse_scorecard is None):
+        st.warning("Standalone scorecard reader is not available in this environment.")
+        return
+
     if st.button("Run OCR Extraction", use_container_width=True, key="run_scorecard_ocr"):
         with st.spinner("Running OCR extraction..."):
             try:
-                lines, debug_text = _extract_ocr_lines(image)
-                parsed_df = _parse_ocr_scorecard_lines(lines)
-                layout_df = _parse_scorecard_layout_a_to_d(lines)
+                ocr_meta = {}
+                if selected_engine == "Standalone Scorecard Reader":
+                    lines, debug_text, parsed_df, ocr_meta = _run_standalone_reader_from_image(image)
+                    if isinstance(ocr_meta, dict):
+                        st.session_state["ocr_meta"] = ocr_meta
 
-                if parsed_df.empty and not layout_df.empty:
-                    parsed_df = layout_df
-                elif not parsed_df.empty and not layout_df.empty:
-                    merged = pd.concat([parsed_df, layout_df], ignore_index=True)
-                    merged = merged.drop_duplicates(subset=["Name"], keep="first")
-                    parsed_df = merged
+                        # Autofill month key from OCR date when available and field is empty.
+                        raw_date = str(ocr_meta.get("date") or "").strip()
+                        if raw_date and not str(st.session_state.get("ocr_month_key", "")).strip():
+                            for fmt in ("%d/%m/%Y", "%d-%m-%Y", "%d/%m/%y", "%d-%m-%y"):
+                                try:
+                                    parsed_date = datetime.strptime(raw_date, fmt)
+                                    st.session_state["ocr_month_key"] = parsed_date.strftime("%b'%y")
+                                    break
+                                except Exception:
+                                    continue
+                else:
+                    st.session_state.pop("ocr_meta", None)
+                    lines, debug_text = _extract_ocr_lines(image)
+                    parsed_df = _parse_ocr_scorecard_lines(lines)
+                    layout_df = _parse_scorecard_layout_a_to_d(lines)
+
+                    if parsed_df.empty and not layout_df.empty:
+                        parsed_df = layout_df
+                    elif not parsed_df.empty and not layout_df.empty:
+                        merged = pd.concat([parsed_df, layout_df], ignore_index=True)
+                        merged = merged.drop_duplicates(subset=["Name"], keep="first")
+                        parsed_df = merged
 
                 st.session_state["ocr_scorecard_lines"] = lines
-                st.session_state["ocr_scorecard_debug"] = debug_text
+                st.session_state["ocr_scorecard_debug"] = f"Engine: {selected_engine}\n{debug_text}" if debug_text else f"Engine: {selected_engine}"
                 st.session_state["ocr_scorecard_df"] = parsed_df
                 st.session_state["ocr_scorecard_last_run"] = {
                     "line_count": len(lines),
@@ -1315,6 +1397,18 @@ def show_scorecard_ocr_reader():
     debug_text = st.session_state.get("ocr_scorecard_debug", "")
     if debug_text:
         st.caption(debug_text)
+
+    meta = st.session_state.get("ocr_meta")
+    if isinstance(meta, dict) and any(meta.values()):
+        chips = []
+        if meta.get("date"):
+            chips.append(f"Date: {meta.get('date')}")
+        if meta.get("time"):
+            chips.append(f"Time: {meta.get('time')}")
+        if meta.get("competition"):
+            chips.append(f"Competition: {meta.get('competition')}")
+        if chips:
+            st.caption(" | ".join(chips))
 
     lines = st.session_state.get("ocr_scorecard_lines", [])
     if lines:
