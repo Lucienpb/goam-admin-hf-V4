@@ -21,6 +21,22 @@ def _clean_name(text: str) -> str:
     return " ".join(token.capitalize() for token in value.split())
 
 
+def _normalize_numeric_artifacts(text: str) -> str:
+    value = str(text or "")
+    value = re.sub(r"(?<=\d)[oO](?=\d)", "0", value)
+    value = re.sub(r"(?<=\d)[iIlL](?=\d)", "1", value)
+    value = re.sub(r"(?<=\d)[sS](?=\d)", "5", value)
+    return value
+
+
+def _is_name_like(text: str) -> bool:
+    cleaned = _clean_name(text)
+    if len(cleaned) < 3:
+        return False
+    # Require at least one letter token to avoid numeric/table fragments.
+    return bool(re.search(r"[A-Za-z]", cleaned))
+
+
 def _score_lines_quality(lines: List[str]) -> int:
     if not lines:
         return 0
@@ -72,6 +88,7 @@ def _run_ocr_multi_pass(image: Image.Image) -> Tuple[List[str], str]:
     best_lines: List[str] = []
     best_score = -1
     all_lines: List[str] = []
+    pass_lines_list: List[List[str]] = []
     debug: List[str] = []
 
     for idx, candidate in enumerate(candidates, start=1):
@@ -83,6 +100,7 @@ def _run_ocr_multi_pass(image: Image.Image) -> Tuple[List[str], str]:
             continue
 
         debug.append(f"Pass {idx}: {len(lines)} lines")
+        pass_lines_list.append(lines)
         all_lines.extend(lines)
 
         score = _score_lines_quality(lines)
@@ -90,70 +108,106 @@ def _run_ocr_multi_pass(image: Image.Image) -> Tuple[List[str], str]:
             best_score = score
             best_lines = lines
 
-    if all_lines:
+    if pass_lines_list:
+        # Keep consensus lines (seen in >=2 passes) and all best-pass lines.
+        vote_counts: Dict[str, int] = {}
+        first_seen_text: Dict[str, str] = {}
+        for pass_lines in pass_lines_list:
+            seen_in_pass = set()
+            for line in pass_lines:
+                key = re.sub(r"\s+", " ", line.strip().lower())
+                if not key or key in seen_in_pass:
+                    continue
+                seen_in_pass.add(key)
+                vote_counts[key] = vote_counts.get(key, 0) + 1
+                if key not in first_seen_text:
+                    first_seen_text[key] = line.strip()
+
         merged: List[str] = []
-        seen = set()
-        for line in all_lines:
+        merged_keys = set()
+
+        for line in best_lines:
             key = re.sub(r"\s+", " ", line.strip().lower())
-            if not key or key in seen:
+            if not key or key in merged_keys:
                 continue
-            seen.add(key)
+            merged_keys.add(key)
             merged.append(line.strip())
 
-        if _score_lines_quality(merged) >= max(best_score, 0):
-            best_lines = merged
+        for key, count in vote_counts.items():
+            if count < 2 or key in merged_keys:
+                continue
+            merged_keys.add(key)
+            merged.append(first_seen_text[key])
+
+        if merged:
+            best_lines = merged[:180]
 
     return best_lines, "\n".join(debug)
 
 
 def _extract_slot_names(lines: List[str]) -> Dict[str, str]:
     slots = {"A": "", "B": "", "C": "", "D": ""}
-    patterns = [
-        re.compile(r"\bplayer\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
-        re.compile(r"\bmarker\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
-        re.compile(r"\bplay\s*([abcd])\b\s*[:\-\s]*(.+)$", flags=re.IGNORECASE),
-    ]
+    label_pattern = re.compile(r"\b(?:player|plaver|play|marker|markcr)\s*([abcd])\b", flags=re.IGNORECASE)
 
-    for raw in lines:
+    for idx, raw in enumerate(lines):
         line = re.sub(r"\s+", " ", str(raw or "")).strip()
         if not line:
             continue
 
-        for pattern in patterns:
-            match = pattern.search(line)
-            if not match:
-                continue
+        match = label_pattern.search(line)
+        if not match:
+            continue
 
-            slot = match.group(1).upper()
-            name = _clean_name(match.group(2))
-            if name and not slots[slot]:
-                slots[slot] = name
+        slot = match.group(1).upper()
+        if slots[slot]:
+            continue
+
+        tail = line[match.end() :].strip(" :-")
+        name = _clean_name(tail)
+
+        if not _is_name_like(name):
+            for offset in (1, 2):
+                next_idx = idx + offset
+                if next_idx >= len(lines):
+                    break
+                candidate = re.sub(r"\s+", " ", str(lines[next_idx] or "")).strip()
+                if _is_name_like(candidate):
+                    name = _clean_name(candidate)
+                    break
+
+        if _is_name_like(name):
+            slots[slot] = name
 
     return slots
 
 
 def _extract_score_ips_pairs(line: str) -> List[Tuple[int, int]]:
     pairs: List[Tuple[int, int]] = []
+    normalized = _normalize_numeric_artifacts(line)
 
-    for match in re.finditer(r"(\d{1,3})\s*[/|\\]\s*(\d{1,2})", line):
+    for match in re.finditer(r"(\d{2,3})\s*[/|\\]\s*(\d{1,2})", normalized):
         strokes = int(match.group(1))
         ips = int(match.group(2))
-        if 40 <= strokes <= 160 and 0 <= ips <= 60:
+        if 55 <= strokes <= 130 and 0 <= ips <= 50:
             pairs.append((strokes, ips))
 
     if len(pairs) >= 4:
         return pairs[:4]
 
-    nums = [int(x) for x in re.findall(r"\d+", line)]
-    if len(nums) >= 8:
-        guess_pairs: List[Tuple[int, int]] = []
-        for idx in range(0, min(len(nums) - 1, 8), 2):
-            strokes = nums[idx]
-            ips = nums[idx + 1]
-            if 40 <= strokes <= 160 and 0 <= ips <= 60:
-                guess_pairs.append((strokes, ips))
-        if len(guess_pairs) >= 4:
-            return guess_pairs[:4]
+    nums = [int(x) for x in re.findall(r"\d{1,3}", normalized)]
+    guess_pairs: List[Tuple[int, int]] = []
+    i = 0
+    while i < len(nums) - 1:
+        strokes = nums[i]
+        ips = nums[i + 1]
+        if 55 <= strokes <= 130 and 0 <= ips <= 50:
+            guess_pairs.append((strokes, ips))
+            i += 2
+            continue
+        i += 1
+
+    if len(guess_pairs) >= 4:
+        return guess_pairs[:4]
 
     return pairs
 
@@ -201,8 +255,17 @@ def parse_scorecard(lines: List[str]) -> Dict[str, Any]:
             continue
 
         pairs = _extract_score_ips_pairs(line)
-        weight = 2 if any(k in line.lower() for k in ("total", "out", "in", "alliance")) else 0
-        if len(pairs) + weight > len(best_pairs):
+        if not pairs:
+            continue
+
+        lower = line.lower()
+        keyword_weight = 6 if any(k in lower for k in ("total", "out", "in", "alliance")) else 0
+        slash_weight = min(6, len(re.findall(r"[/|\\]", line)))
+        big_number_penalty = sum(1 for n in re.findall(r"\d+", line) if int(n) > 200)
+        line_score = (len(pairs) * 10) + keyword_weight + slash_weight - (big_number_penalty * 2)
+
+        current_best_score = (len(best_pairs) * 10)
+        if line_score > current_best_score:
             best_pairs = pairs
             best_line = line
 
@@ -216,10 +279,14 @@ def parse_scorecard(lines: List[str]) -> Dict[str, Any]:
             strokes, ips = best_pairs[idx]
             confidence = "medium"
 
+        name_value = slots.get(slot) or f"Player {slot}"
+        if not name_value.lower().startswith("player ") and strokes is not None and ips is not None:
+            confidence = "high"
+
         players.append(
             {
                 "slot": slot,
-                "name": slots.get(slot) or f"Player {slot}",
+                "name": name_value,
                 "strokes": strokes,
                 "ips": ips,
                 "liv": "",
