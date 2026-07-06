@@ -28,6 +28,19 @@ except Exception:
     RapidOCR = None
 
 try:
+    import cv2
+except Exception:
+    cv2 = None
+
+try:
+    import torch
+    from transformers import TrOCRProcessor, VisionEncoderDecoderModel
+except Exception:
+    torch = None
+    TrOCRProcessor = None
+    VisionEncoderDecoderModel = None
+
+try:
     from scorecard_reader import parse_scorecard, _run_ocr_multi_pass
 except Exception:
     parse_scorecard = None
@@ -302,58 +315,225 @@ def _extract_ocr_lines(uploaded_image: Image.Image):
                 score += 3
         return score
 
-    # Preferred OCR backend: RapidOCR (fully local, no external tesseract binary required).
-    if RapidOCR is not None:
-        engine = RapidOCR()
-        gray = uploaded_image.convert("L")
-        rgb = uploaded_image.convert("RGB")
-        bw = ImageOps.autocontrast(gray).point(lambda x: 255 if x > 145 else 0, mode="1").convert("RGB")
-        bw_inv = ImageOps.invert(bw.convert("L")).convert("RGB")
-        sharp = ImageOps.autocontrast(gray).filter(ImageFilter.SHARPEN).convert("RGB")
+    def _is_transformers_available():
+        return (
+            torch is not None
+            and TrOCRProcessor is not None
+            and VisionEncoderDecoderModel is not None
+        )
 
-        candidates = [
-            rgb,
-            ImageOps.autocontrast(gray).convert("RGB"),
-            ImageOps.equalize(gray).convert("RGB"),
-            sharp,
-            bw,
-            bw_inv,
-            rgb.rotate(-1.2, expand=True, fillcolor="white"),
-            rgb.rotate(1.2, expand=True, fillcolor="white"),
+    def _cv2_preprocess_candidates(image_rgb: Image.Image):
+        if cv2 is None:
+            gray = image_rgb.convert("L")
+            return [
+                np.array(image_rgb.convert("RGB")),
+                np.array(ImageOps.autocontrast(gray).convert("RGB")),
+                np.array(ImageOps.equalize(gray).convert("RGB")),
+            ]
+
+        arr_rgb = np.array(image_rgb.convert("RGB"))
+        arr_bgr = cv2.cvtColor(arr_rgb, cv2.COLOR_RGB2BGR)
+        gray = cv2.cvtColor(arr_bgr, cv2.COLOR_BGR2GRAY)
+
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8)).apply(gray)
+        denoised = cv2.fastNlMeansDenoising(clahe, None, 12, 7, 21)
+        adaptive = cv2.adaptiveThreshold(
+            denoised,
+            255,
+            cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY,
+            31,
+            11,
+        )
+        otsu = cv2.threshold(denoised, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+
+        # Remove table/grid lines that frequently pollute OCR.
+        table_clean = adaptive.copy()
+        h_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (max(20, gray.shape[1] // 18), 1))
+        v_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, max(20, gray.shape[0] // 18)))
+        h_lines = cv2.morphologyEx(table_clean, cv2.MORPH_OPEN, h_kernel)
+        v_lines = cv2.morphologyEx(table_clean, cv2.MORPH_OPEN, v_kernel)
+        table_clean = cv2.subtract(table_clean, h_lines)
+        table_clean = cv2.subtract(table_clean, v_lines)
+
+        def _to_rgb(x):
+            return cv2.cvtColor(x, cv2.COLOR_GRAY2RGB)
+
+        return [
+            arr_rgb,
+            _to_rgb(clahe),
+            _to_rgb(denoised),
+            _to_rgb(adaptive),
+            _to_rgb(otsu),
+            _to_rgb(table_clean),
+            np.array(image_rgb.rotate(-1.2, expand=True, fillcolor="white")),
+            np.array(image_rgb.rotate(1.2, expand=True, fillcolor="white")),
         ]
 
-        best_score = -1
-        all_lines = []
-        for idx, candidate in enumerate(candidates, start=1):
-            arr = np.array(candidate)
-            try:
-                result, _ = engine(arr)
-                candidate_lines = _collect_lines(result)
-            except Exception as e:
-                debug_text.append(f"Pass {idx}: OCR error ({e})")
+    def _segment_line_boxes(gray_img):
+        if cv2 is None:
+            return [(0, 0, gray_img.shape[1], gray_img.shape[0])]
+
+        inv = cv2.adaptiveThreshold(
+            gray_img,
+            255,
+            cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY_INV,
+            31,
+            11,
+        )
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (max(12, gray_img.shape[1] // 25), 3))
+        dilated = cv2.dilate(inv, kernel, iterations=1)
+        contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+        raw_boxes = []
+        min_width = max(100, int(gray_img.shape[1] * 0.20))
+        min_height = 14
+        max_height = max(70, int(gray_img.shape[0] * 0.25))
+
+        for c in contours:
+            x, y, w, h = cv2.boundingRect(c)
+            if w < min_width or h < min_height or h > max_height:
                 continue
+            raw_boxes.append((x, y, w, h))
 
-            debug_text.append(f"Pass {idx}: {len(candidate_lines)} OCR lines")
-            all_lines.extend(candidate_lines)
+        raw_boxes.sort(key=lambda b: (b[1], b[0]))
+        if not raw_boxes:
+            return [(0, 0, gray_img.shape[1], gray_img.shape[0])]
 
-            score = _quality_score(candidate_lines)
-            if score > best_score:
-                best_score = score
-                lines = candidate_lines
+        # Merge overlapping boxes from same text line.
+        merged = []
+        for box in raw_boxes:
+            x, y, w, h = box
+            if not merged:
+                merged.append([x, y, w, h])
+                continue
+            px, py, pw, ph = merged[-1]
+            y_close = abs(y - py) <= max(10, min(h, ph) // 2)
+            overlap = not (x > px + pw + 20 or px > x + w + 20)
+            if y_close and overlap:
+                nx = min(px, x)
+                ny = min(py, y)
+                nr = max(px + pw, x + w)
+                nb = max(py + ph, y + h)
+                merged[-1] = [nx, ny, nr - nx, nb - ny]
+            else:
+                merged.append([x, y, w, h])
 
-        if all_lines:
-            merged = []
+        return [(x, y, w, h) for x, y, w, h in merged]
+
+    def _run_trocr_lines(image_rgb: Image.Image):
+        if not _is_transformers_available():
+            return [], "TrOCR unavailable (torch/transformers not installed)."
+
+        try:
+            if "trocr_bundle" not in st.session_state:
+                processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-printed")
+                model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-base-printed")
+                device = "cuda" if torch.cuda.is_available() else "cpu"
+                model.to(device)
+                model.eval()
+                st.session_state["trocr_bundle"] = {
+                    "processor": processor,
+                    "model": model,
+                    "device": device,
+                }
+
+            bundle = st.session_state.get("trocr_bundle") or {}
+            processor = bundle.get("processor")
+            model = bundle.get("model")
+            device = bundle.get("device", "cpu")
+            if processor is None or model is None:
+                return [], "TrOCR model bundle unavailable in session."
+
+            gray = np.array(image_rgb.convert("L"))
+            boxes = _segment_line_boxes(gray)
+            lines_out = []
+
+            for idx, (x, y, w, h) in enumerate(boxes[:80], start=1):
+                # Add margin to avoid clipping ascenders/descenders.
+                pad = 4
+                x0 = max(0, x - pad)
+                y0 = max(0, y - pad)
+                x1 = min(gray.shape[1], x + w + pad)
+                y1 = min(gray.shape[0], y + h + pad)
+
+                crop = image_rgb.crop((x0, y0, x1, y1)).convert("RGB")
+                pixel_values = processor(images=crop, return_tensors="pt").pixel_values.to(device)
+                with torch.no_grad():
+                    generated_ids = model.generate(pixel_values, max_new_tokens=40)
+                text = processor.batch_decode(generated_ids, skip_special_tokens=True)[0].strip()
+                if text:
+                    lines_out.append(text)
+
+            lines_out = [re.sub(r"\s+", " ", t).strip() for t in lines_out if str(t).strip()]
+            dedup = []
             seen = set()
-            for t in all_lines:
-                k = re.sub(r"\s+", " ", str(t).strip().lower())
-                if not k or k in seen:
+            for t in lines_out:
+                key = t.lower()
+                if key in seen:
                     continue
-                seen.add(k)
-                merged.append(str(t).strip())
+                seen.add(key)
+                dedup.append(t)
 
-            merged_score = _quality_score(merged)
-            if merged_score >= max(best_score, 0):
-                lines = merged
+            return dedup, f"TrOCR lines: {len(dedup)}"
+        except Exception as e:
+            return [], f"TrOCR error ({e})"
+
+    rgb = uploaded_image.convert("RGB")
+    all_lines = []
+    best_score = -1
+
+    # Primary backend: RapidOCR over OpenCV-enhanced candidates.
+    if RapidOCR is not None:
+        try:
+            engine = RapidOCR()
+            candidates = _cv2_preprocess_candidates(rgb)
+            for idx, arr in enumerate(candidates, start=1):
+                try:
+                    result, _ = engine(arr)
+                    candidate_lines = _collect_lines(result)
+                except Exception as e:
+                    debug_text.append(f"RapidOCR pass {idx}: error ({e})")
+                    continue
+
+                debug_text.append(f"RapidOCR pass {idx}: {len(candidate_lines)} OCR lines")
+                all_lines.extend(candidate_lines)
+
+                score = _quality_score(candidate_lines)
+                if score > best_score:
+                    best_score = score
+                    lines = candidate_lines
+        except Exception as e:
+            debug_text.append(f"RapidOCR init error ({e})")
+
+    # Fallback/augment backend: TrOCR (transformers + torch).
+    trocr_lines, trocr_debug = _run_trocr_lines(rgb)
+    if trocr_debug:
+        debug_text.append(trocr_debug)
+    if trocr_lines:
+        all_lines.extend(trocr_lines)
+        score = _quality_score(trocr_lines)
+        if score > best_score:
+            best_score = score
+            lines = trocr_lines
+
+    if all_lines:
+        merged = []
+        seen = set()
+        for t in all_lines:
+            k = re.sub(r"\s+", " ", str(t).strip().lower())
+            if not k or k in seen:
+                continue
+            seen.add(k)
+            merged.append(str(t).strip())
+
+        merged_score = _quality_score(merged)
+        if merged_score >= max(best_score, 0):
+            lines = merged
+
+    if not lines:
+        debug_text.append("No OCR backend produced output lines.")
 
     return lines, "\n".join(debug_text)
 
@@ -1435,9 +1615,9 @@ def show_scorecard_ocr_reader():
 
     st.image(image, caption="Uploaded scorecard", use_container_width=True)
 
-    if RapidOCR is None:
+    if RapidOCR is None and (torch is None or TrOCRProcessor is None or VisionEncoderDecoderModel is None):
         st.warning(
-            "OCR engine is not available. Install dependency 'rapidocr-onnxruntime' to enable extraction."
+            "OCR engine is not available. Install 'rapidocr-onnxruntime' or the stack: torch + transformers."
         )
         return
 
