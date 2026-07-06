@@ -410,6 +410,63 @@ def _parse_ocr_scorecard_lines(lines):
     return pd.DataFrame(parsed)
 
 
+def _parse_ocr_names_only(lines):
+    parsed = []
+    seen_names = set()
+
+    def _add_name(name, source_line):
+        key = str(name or "").strip().lower()
+        if not key or key in seen_names:
+            return
+        seen_names.add(key)
+        parsed.append(
+            {
+                "Name": name,
+                "Strokes": "",
+                "IPS": "",
+                "LIV": "",
+                "OCR Line": source_line,
+            }
+        )
+
+    # Prefer explicit player labels when present.
+    slots = _extract_slot_names(lines)
+    for slot in ["A", "B", "C", "D"]:
+        name = str(slots.get(slot, "") or "").strip()
+        if name:
+            _add_name(name, f"Slot {slot}")
+
+    blocked_terms = {
+        "total", "competition", "alliance", "out", "in", "date", "time",
+        "hole", "score", "result", "stroke", "par", "tee", "marker",
+    }
+
+    for raw in lines:
+        line = re.sub(r"\s+", " ", str(raw or "")).strip()
+        if not line:
+            continue
+
+        # Name-only mode ignores score-heavy lines.
+        if len(re.findall(r"\d", line)) >= 4:
+            continue
+
+        candidate = _clean_ocr_name(line)
+        if not candidate:
+            continue
+
+        low = candidate.lower()
+        if any(term in low for term in blocked_terms):
+            continue
+
+        token_count = len(candidate.split())
+        if token_count < 2 or token_count > 4:
+            continue
+
+        _add_name(candidate, line)
+
+    return pd.DataFrame(parsed)
+
+
 def _clean_ocr_name(text):
     value = re.sub(r"\s+", " ", str(text or "")).strip()
     value = re.sub(r"\b(sap\s*id|name|marker\s*[a-d]|player\s*[a-d])\b", "", value, flags=re.IGNORECASE)
@@ -1350,6 +1407,13 @@ def show_scorecard_ocr_reader():
         help="Standalone Scorecard Reader uses the standalone parser now integrated into this page.",
     )
 
+    names_only = st.checkbox(
+        "Only extract names",
+        value=True,
+        key="ocr_names_only",
+        help="Basic mode: detect player names only and leave Strokes/IPS blank for manual entry.",
+    )
+
     uploaded = st.file_uploader(
         "Upload scorecard image",
         type=["png", "jpg", "jpeg", "webp"],
@@ -1387,6 +1451,8 @@ def show_scorecard_ocr_reader():
                 ocr_meta = {}
                 if selected_engine == "Standalone Scorecard Reader":
                     lines, debug_text, parsed_df, ocr_meta = _run_standalone_reader_from_image(image)
+                    if names_only:
+                        parsed_df = _parse_ocr_names_only(lines)
                     if isinstance(ocr_meta, dict):
                         st.session_state["ocr_meta"] = ocr_meta
 
@@ -1403,15 +1469,18 @@ def show_scorecard_ocr_reader():
                 else:
                     st.session_state.pop("ocr_meta", None)
                     lines, debug_text = _extract_ocr_lines(image)
-                    parsed_df = _parse_ocr_scorecard_lines(lines)
-                    layout_df = _parse_scorecard_layout_a_to_d(lines)
+                    if names_only:
+                        parsed_df = _parse_ocr_names_only(lines)
+                    else:
+                        parsed_df = _parse_ocr_scorecard_lines(lines)
+                        layout_df = _parse_scorecard_layout_a_to_d(lines)
 
-                    if parsed_df.empty and not layout_df.empty:
-                        parsed_df = layout_df
-                    elif not parsed_df.empty and not layout_df.empty:
-                        merged = pd.concat([parsed_df, layout_df], ignore_index=True)
-                        merged = merged.drop_duplicates(subset=["Name"], keep="first")
-                        parsed_df = merged
+                        if parsed_df.empty and not layout_df.empty:
+                            parsed_df = layout_df
+                        elif not parsed_df.empty and not layout_df.empty:
+                            merged = pd.concat([parsed_df, layout_df], ignore_index=True)
+                            merged = merged.drop_duplicates(subset=["Name"], keep="first")
+                            parsed_df = merged
 
                 st.session_state["ocr_scorecard_lines"] = lines
                 st.session_state["ocr_scorecard_debug"] = f"Engine: {selected_engine}\n{debug_text}" if debug_text else f"Engine: {selected_engine}"
@@ -1480,6 +1549,9 @@ def show_scorecard_ocr_reader():
         num_rows="dynamic",
         key="ocr_scorecard_editor",
     )
+
+    if names_only:
+        st.caption("Names-only mode is enabled. Fill Strokes and IPS manually before publishing.")
 
     col1, col2 = st.columns(2)
     with col1:
