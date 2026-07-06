@@ -30,12 +30,24 @@ GOAM Admin is a Streamlit application for managing GOAM player data, pairings, h
 
 - Main app: `app.py`
 - Secondary Streamlit example/dashboard: `src/streamlit_app.py`
+- Standalone OCR reader: `scorecard_reader.py`
 
 Run the main app locally with:
 
 ```bash
 streamlit run app.py
 ```
+
+Run the standalone scorecard reader:
+
+```bash
+python scorecard_reader.py --image path/to/scorecard.jpg --output data/ocr_output.json
+```
+
+Optional flags:
+
+- `--no-raw` to exclude raw OCR text lines
+- `--compact` to emit compact JSON
 
 ## Installation
 
